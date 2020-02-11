@@ -1,0 +1,62 @@
+#first
+{
+	color: #6495ED;
+	text-transform: uppercase ;
+}
+
+th
+{
+	font-size: 20pt ;
+	width: 150px ;
+	height: 75px ;
+}
+
+#schetable
+{
+	box-shadow: 10px 10px 5px #DCDCDC ;
+	margin: 100px 230px ;
+}
+
+#schetable
+{
+	background-color: #4695ED ;
+}
+
+th
+{
+	background-color: #FFF ;
+}
+
+button
+{
+	background-color: transparent ;
+	border: none ;
+	color: #FFF ;
+	display: inline-block ;
+	font-size: 20pt ;
+}
+
+#title-year
+{
+	color: #FFF ; 
+	display: inline-block ; 
+	font-size: 20pt ; 
+	margin: 10px 30px ;
+}
+
+#title-month
+{
+	color: #FFF ; 
+	font-size: 30pt ; 
+	margin: 10px 30px ; 
+}
+
+#left
+{
+	margin: 0 350px 0 0 ;
+}
+
+#right
+{
+	margin: 0 0 0 350px ;
+}

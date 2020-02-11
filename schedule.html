@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang = "en" >
+<head>
+    <script type = "text/javascript" src = "head.js" >
+    </script>
+
+    <script type = "text/javascript" src = "nav.js" >
+    </script>
+
+    <link rel = 'shortcut icon' href = 'repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = 'general.css' >
+
+    <script type = "text/javascript">
+        head ( "Schedule" ) ;
+    </script>
+</head>
+
+<body> 
+    <script type = "text/javascript">
+        nav ( 4 ) ;
+    </script>  
+
+    <div id = "table" align = "middle"  >
+        <div id = "schetable">
+            <div id = "title-month" >
+            </div>
+
+            <button type = "button" id = "left" >
+                &lt;
+            </button>
+
+            <div id = "title-year" >
+            </div>
+            
+            <button type = "button" id = "right" >
+                &gt;
+            </button>
+            
+            <table align = "middle" id = "content" >
+            </table>
+
+            <script type="text/javascript" src = "setdate.js" >
+            </script>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p id = "foot"> Language: </p>
+
+    <script type = "text/javascript" src = "zh-jyut/sche.js" >
+    </script>
+    
+    <select onchange = 'eval ( options[selectedIndex].value ) ;' >
+        <option value = "location.reload ()" > English </option>
+        <option value = "translate_zh () " > 中文简体 </option>
+        <option value = "translate_jyut (); hd_jyut () ; " > 中文繁體(中國香港及澳門) </option>
+        <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>
+    </select>
+</footer>
+
+</html>

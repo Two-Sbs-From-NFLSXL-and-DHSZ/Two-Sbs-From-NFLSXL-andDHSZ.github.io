@@ -1,0 +1,26 @@
+#layout
+{
+	margin: 20px 50px ; 
+	padding: 20px ;
+}
+
+#layout h2
+{
+	font-size: 30pt ;
+	text-align: center ;
+}
+
+#layout h3 
+{
+	font-size: 25pt ;
+}
+
+#layout h4
+{
+	font-size: 20pt ; 
+}
+
+#layout p
+{
+	font-size: 15pt ;
+}

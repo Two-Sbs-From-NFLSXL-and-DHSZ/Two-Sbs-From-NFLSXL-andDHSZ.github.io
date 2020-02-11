@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html lang = "en" >
+<head>
+    <script type = "text/javascript" src = "head.js" >
+    </script>
+
+    <script type = "text/javascript" src = "nav.js" >
+    </script>
+
+    <link rel = 'shortcut icon' href = 'repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = 'general.css' >
+
+    <script type = "text/javascript">
+        head ( "About" ) ;
+    </script>
+</head>
+
+<body>
+	<script type = "text/javascript">
+        nav ( 5 ) ;
+    </script>  
+
+	<div id = "layout" >
+		<h2 id = "about-title" > About Us </h2>
+		<p id = "about-desp" > &ensp;&ensp;This website is designed and written by Martin Zhou and David Fu, aiming to help international students have a better performances at international tests like A-level and AP. <br> <br> </p>
+        <h4 id = "contact-title" > Contact us </h4>
+        <p id = "contact-desp-1" > Email: zcorn2017@outlook.com <br> &ensp;&ensp;&ensp;&ensp;&ensp; fjh314.84@gmail.com </p>
+        <p id = "contact-desp-2" > Github: zcorn2017 <br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Inblanke </p>
+	</div>
+</body>
+
+<footer>
+    <p id = "foot"> Language: </p>
+
+    <script type = "text/javascript" src = "zh-jyut/about.js" >
+    </script>
+    
+    <select onchange = 'eval ( options[selectedIndex].value ) ;' >
+        <option value = "location.reload ()" > English </option>
+        <option value = "translate_zh () " > 中文简体 </option>
+        <option value = "translate_jyut () " > 中文繁體(中國香港及澳門) </option>
+        <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>
+    </select>
+</footer>
+
+</html>
