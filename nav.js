@@ -1,12 +1,12 @@
 function nav ( ind ) 
 {
 	document.write ( "<div id = 'header' > " ) ;
-    document.write ( "<a href = 'index.html'> <img src = 'repository/title-en.jpg' > </a> " ) ;
+    document.write ( "<a href = 'main.html'> <img src = 'repository/title-en.jpg' > </a> " ) ;
     document.write ( "</div>" ) ;
 
     document.write ( "<nav id = 'Navigation' > " ) ;
     
-    document.write ( "<a href = 'index.html' id = 'nav-home' class = 'Navi " ) ;
+    document.write ( "<a href = 'main.html' id = 'nav-home' class = 'Navi " ) ;
 
     if ( ind == 0 ) 
         document.write ( "hovered' " ) ;
