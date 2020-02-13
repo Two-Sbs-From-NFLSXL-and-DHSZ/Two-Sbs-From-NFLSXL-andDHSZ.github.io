@@ -71,14 +71,8 @@
     </script>
 
     <script type="text/javascript">
-    	var ck = document.cookie ;
-
-    	if ( ck == "zh-jyut" )
+    	if ( document.cookie == "lang = jyut" )
     		translate_jyut () ;
-    	/*else if ( ck == "zh" )
-    		translate_zh () ;
-    	else if ( ck == "zh-fan" ) 
-    		translate_fan () ;*/
      </script>
     
     <select onchange = 'eval ( options[selectedIndex].value ) ;' >
