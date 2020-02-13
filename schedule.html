@@ -52,6 +52,11 @@
     <script type = "text/javascript" src = "zh-jyut/sche.js" >
     </script>
     
+    <script type="text/javascript">
+    	if ( document.cookie == "lang = jyut" )
+    		translate_jyut () ;
+     </script>
+    
     <select onchange = 'eval ( options[selectedIndex].value ) ;' >
         <option value = "location.reload ()" > English </option>
         <option value = "translate_zh () " > 中文简体 </option>
