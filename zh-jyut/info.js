@@ -53,6 +53,4 @@ function translate_jyut ()
 	ft.innerHTML = "語言：" ;
 
 	document.cookie = "lang = jyut" ;
-
-	alert ( document.cookie ) ;
 }

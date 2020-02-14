@@ -22,6 +22,4 @@ function translate_jyut ()
 
 	
 	document.cookie = "lang = jyut" ;
-
-	alert ( document.cookie ) ;
 }
