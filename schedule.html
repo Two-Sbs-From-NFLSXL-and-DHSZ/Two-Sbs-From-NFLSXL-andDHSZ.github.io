@@ -54,10 +54,14 @@
 
     <script type="text/javascript">
         if ( document.cookie == "lang=jyut" ) 
+        {
             translate_jyut () ;
+
+            document.getElementById ( "lang" ) [ 0 ].value = "中文繁體(中國香港及澳門)" ;
+        }
     </script>
     
-    <select onchange = 'eval ( options[selectedIndex].value ) ;' >
+    <select onchange = 'eval ( options[selectedIndex].value ) ;' id = "lang" >
         <option value = "location.reload ()" > English </option>
         <option value = "translate_zh () " > 中文简体 </option>
         <option value = "translate_jyut (); hd_jyut () ; " > 中文繁體(中國香港及澳門) </option>
