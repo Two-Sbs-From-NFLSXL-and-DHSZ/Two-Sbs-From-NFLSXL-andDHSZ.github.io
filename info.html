@@ -70,6 +70,13 @@
     <script type = "text/javascript" src = "zh-jyut/info.js" >
     </script>
 
+    <select onchange = 'eval ( options[selectedIndex].value ) ;' id = "lang" >
+        <option value = "location.reload ()" > English </option>
+        <option value = "translate_zh () " > 中文简体 </option>
+        <option value = "translate_jyut (); hd_jyut () ; " > 中文繁體(中國香港及澳門) </option>
+        <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>
+    </select>
+
     <script type="text/javascript">
         if ( document.cookie == "lang=jyut" ) 
         {
@@ -79,12 +86,6 @@
         }
     </script>
     
-    <select onchange = 'eval ( options[selectedIndex].value ) ;' >
-        <option value = "location.reload ()" > English </option>
-        <option value = "translate_zh () " > 中文简体 </option>
-        <option value = "translate_jyut () " > 中文繁體(中國香港及澳門) </option>
-        <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>
-    </select>
 </footer>
 
 </html>
