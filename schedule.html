@@ -53,10 +53,10 @@
     </script>
     
     <select onchange = 'eval ( options[selectedIndex].value ) ;' id = "lang" >
-        <option value = "document.cookie = 'expires=Thu, 01 Jan 1700 00:00:01 GMT;' location.reload ()" > English </option>
+        <option value = "document.cookie = null; location.reload ()" > English </option>
         <option value = "translate_zh () " > 中文简体 </option>
         <option value = "translate_jyut (); hd_jyut () ; " > 中文繁體(中國香港及澳門) </option>
-        <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>
+        <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>  
     </select>
 
     <script type="text/javascript">
@@ -65,7 +65,7 @@
             translate_jyut () ;
 
             document.getElementById ( "lang" ).innerHTML = "\
-            <option value = 'location.reload ()' > English </option>\
+            <option value = 'document.cookie = null; location.reload ()' > English </option>\
             <option value = 'translate_zh () ' > 中文简体 </option>\
             <option value = 'translate_jyut (); ' selected = 'selected' > 中文繁體(中國香港及澳門) </option>\
             <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
