@@ -54,5 +54,5 @@ function translate_jyut ()
 	lm4.innerHTML = "瞭解更多" ;
 	ft.innerHTML = "語言：" ;
 
-	document.cookie = "lang = jyut" ;
+	document.cookie = "lang = jyut; expires=Fri, 31 Dec 9999 23:59:59 GMT" ;
 }
