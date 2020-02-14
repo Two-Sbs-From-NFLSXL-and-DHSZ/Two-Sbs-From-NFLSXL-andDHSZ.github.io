@@ -1,6 +1,5 @@
 *
 {
-  font-family: Calibri Light ;
   margin: 0 ; 
   padding: 0 ;
 }
@@ -25,6 +24,7 @@ a
 #Navigation 
 {
 	background-color: #FFF ;
+  font-family: Calibri Light ;
   display: inline ;
 }
 
@@ -57,6 +57,7 @@ a
 footer 
 {
   background-color: #696969 ;
+  font-family: Calibri Light ;
 }
 
 footer p

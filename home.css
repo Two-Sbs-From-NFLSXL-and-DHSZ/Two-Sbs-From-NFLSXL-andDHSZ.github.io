@@ -1,6 +1,7 @@
 .photo
 {
 	background-image: url( "repository/preface.jpg" ) ;
+	font-family: Calibri Light ;
 	height: auto ;
 	text-align: center ;
 }
@@ -33,6 +34,7 @@
 
 .bigmodel
 {
+	font-family: Calibri Light ;
 	margin: 20px ;
 }
 

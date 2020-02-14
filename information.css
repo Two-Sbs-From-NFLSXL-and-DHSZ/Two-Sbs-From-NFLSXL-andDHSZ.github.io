@@ -1,5 +1,6 @@
 #infopage
 {
+  	font-family: Calibri Light ;
 	margin: 20px ;
 }
 
@@ -7,6 +8,7 @@
 {
 	background-color: #FFF ;
 	border: solid #000 ;
+	font-size: 15pt ;
 	margin: 20px ;
 	padding: 20px ;
 }
