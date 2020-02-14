@@ -71,21 +71,19 @@
     </script>
 
     <select onchange = 'eval ( options[selectedIndex].value ) ;' id = "lang" >
-        <option value = "document.cookie = 'expires = Sat Jan 1 2000 00:00:01 GMT+0800 (China Standard Time);'; location.reload ()" > English </option>
+        <option value = "document.cookie = 'lang = en' ; location.reload ()" > English </option>
         <option value = "translate_zh () " > 中文简体 </option>
         <option value = "translate_jyut (); " > 中文繁體(中國香港及澳門) </option>
         <option value = "translate_fan () " > 中文繁體(中國臺灣) </option>  
     </select>
 
     <script type="text/javascript">
-        var ck = document.cookie.split ( ';' ) ;
-
-        if ( ck [ 0 ].replace ( " " , "" ) == "lang=jyut" || ck [ 1 ].replace ( " " , "" ) == "lang=jyut" ) 
+        if ( document.cookie == "lang=jyut" ) 
         {
             translate_jyut () ;
 
             document.getElementById ( "lang" ).innerHTML = "\
-            <option value = 'document.cookie = \"expires = Sat Jan 1 2000 00:00:01 GMT+0800 (China Standard Time);\"; location.reload ()' > English </option>\
+            <option value = "document.cookie = 'lang = en' ; location.reload ()" > English </option>\
             <option value = 'translate_zh () ' > 中文简体 </option>\
             <option value = 'translate_jyut (); ' selected = 'selected' > 中文繁體(中國香港及澳門) </option>\
             <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
