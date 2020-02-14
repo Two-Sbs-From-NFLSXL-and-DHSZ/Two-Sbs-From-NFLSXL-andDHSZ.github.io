@@ -62,7 +62,7 @@
     <script type="text/javascript">
         var ck = document.cookie.split ( ';' ) ;
 
-        if ( ck [ 0 ] == "lang=jyut" || ck [ 1 ] == "lang=jyut" ) 
+        if ( ck [ 0 ].replace ( " " , "" ) == "lang=jyut" || ck [ 1 ].replace ( " " , "" ) == "lang=jyut" ) 
         {
             translate_jyut () ;
 
