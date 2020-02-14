@@ -1,3 +1,4 @@
+var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
 var nh = document.getElementById ( "nav-home" ) ;
@@ -21,6 +22,7 @@ var ft = document.getElementById ( "foot" ) ;
 
 function translate_jyut () 
 {
+	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-jyut/information.css' >"
 	tt.innerHTML = "信息 - 國際考試助手"
 	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title-fan.jpg' > </a>"
 	nh.innerHTML = "主頁" ;

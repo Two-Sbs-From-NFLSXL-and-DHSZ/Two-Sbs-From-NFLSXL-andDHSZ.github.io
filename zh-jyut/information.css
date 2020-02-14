@@ -1,0 +1,33 @@
+#infopage
+{
+	font-family: 华文细黑 ;
+	margin: 20px ;
+}
+
+.info
+{
+	background-color: #FFF ;
+	border: solid #000 ;
+	font-size: 15pt ;
+	margin: 20px ;
+	padding: 20px ;
+}
+
+.info:hover 
+{
+	background-color: #4169E1 ;
+	color: #FFF ;
+}
+
+.info button
+{
+	background-color: #FEDB00 ;
+	border: none ;
+	color: #000 ;
+	display: block;
+	margin: 20px 600px 10px 600px ;
+	padding: 10px 20px 10px 20px ;
+	text-align: center ;
+	text-decoration: none ;
+	text-transform: uppercase ;
+}

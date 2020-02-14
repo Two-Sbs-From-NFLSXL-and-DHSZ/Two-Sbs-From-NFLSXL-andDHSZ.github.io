@@ -1,3 +1,4 @@
+var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
 var nh = document.getElementById ( "nav-home" ) ;
