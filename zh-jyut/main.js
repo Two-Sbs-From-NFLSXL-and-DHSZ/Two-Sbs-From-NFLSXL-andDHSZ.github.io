@@ -1,8 +1,8 @@
 var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
-var nh = document.getElementById ( "nav-home" ) ;
 var nsc = document.getElementById ( "nav-search" ) ;
+var np = document.getElementById ( "nav-prac" ) ;
 var ne = document.getElementById ( "nav-exp" ) ;
 var ni = document.getElementById ( "nav-info" ) ;
 var ns = document.getElementById ( "nav-sche" ) ;
@@ -22,8 +22,8 @@ function translate_jyut ()
 	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-jyut/home.css' >"
 	tt.innerHTML = "主頁 - 國際考試助手"
 	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title-fan.jpg' > </a>"
-	nh.innerHTML = "主頁" ;
 	nsc.innerHTML = "搜尋" ;
+	np.innerHTML = "練習" ;
 	ne.innerHTML = "試驗" ;
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;
@@ -31,11 +31,14 @@ function translate_jyut ()
 	pd.innerHTML = "唔會呢條題？嚟搵下題目嘅答案!" ;
 	pb.innerHTML = "影像" ;
 	et.innerHTML = "試驗" ;
-	ed.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 搵唔到地方做試驗，定係攞唔到需要啲嘢？冇關係！喺呢度做線上試驗！呢個網站提供物理同埋化學嘅線上試驗畀你，仲有多種多樣嘅試驗考試模擬，幫助你輕鬆應付試驗考試！" ;
+	ed.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢度提供嘅線上實驗室幫助學生喺冇辦法做線下試驗時亦可以在網上完成各種各樣啲物理\
+	同埋化學嘅試驗，幫助佢哋順利通過有關啲試驗測試。" ;
 	it.innerHTML = "信息" ;
-	id.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 搵唔到及時同準確嘅考試信息？嚟呢度！我哋提供A-level, AP, SAT, ACT準確有效嘅信息，包括考試時間，官方指南，以及考試變化。嚟睇下！" ;
+	id.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢個網站提供關於A-level，AP，SAT同ACT嘅備考資料，包括考試時間表，官方指南，\
+	考試須知，同考試變化，幫助考生喺考試前掌握所需啲資料並做好準備。" ;
 	st.innerHTML = "日程" ;
-	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 想要一張考試日程表卻冇時間計劃？我哋爲你準備咗喇！嚟睇下考試時間並做好準備！" 
+	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢度仲有精心爲考生準備嘅考試日程表，包括註冊考試截止日期同埋考試時間，幫助佢哋\
+	計畫日程並合理安排時間準備考試。" 
 	ft.innerHTML = "語言：" ;
 
 

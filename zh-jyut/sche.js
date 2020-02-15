@@ -1,8 +1,8 @@
 var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
-var nh = document.getElementById ( "nav-home" ) ;
 var nsc = document.getElementById ( "nav-search" ) ;
+var np = document.getElementById ( "nav-prac" ) ;
 var ne = document.getElementById ( "nav-exp" ) ;
 var ni = document.getElementById ( "nav-info" ) ;
 var ns = document.getElementById ( "nav-sche" ) ;
@@ -13,8 +13,8 @@ function translate_jyut ()
 {
 	tt.innerHTML = "日程 - 國際考試助手"
 	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title-fan.jpg' > </a>"
-	nh.innerHTML = "主頁" ;
 	nsc.innerHTML = "搜尋" ;
+	np.innerHTML = "練習" ;
 	ne.innerHTML = "試驗" ;
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;

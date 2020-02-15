@@ -1,8 +1,8 @@
 var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
-var nh = document.getElementById ( "nav-home" ) ;
 var nsc = document.getElementById ( "nav-search" ) ;
+var np = document.getElementById ( "nav-prac" ) ;
 var ne = document.getElementById ( "nav-exp" ) ;
 var ni = document.getElementById ( "nav-info" ) ;
 var ns = document.getElementById ( "nav-sche" ) ;
@@ -25,29 +25,30 @@ function translate_jyut ()
 	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-jyut/information.css' >"
 	tt.innerHTML = "信息 - 國際考試助手"
 	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title-fan.jpg' > </a>"
-	nh.innerHTML = "主頁" ;
 	nsc.innerHTML = "搜尋" ;
+	np.innerHTML = "練習" ;
 	ne.innerHTML = "試驗" ;
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
-	ad.innerHTML  = "&nbsp;&nbsp;&nbsp;&nbsp;A-level考試爲Pearson Edexcel舉辦嘅國際考試，在五月，六月以及一月舉辦。作爲\
-	GCE(General Certificate of Education)嘅一部分，A-level考試主要針對英國方向嘅學生，並被包括新加坡，烏干達的多個國家認\
-	可。A-level考試已經成爲英國大學要求嘅基本申請條件之一。" ;
+	ad.innerHTML  = "&nbsp;&nbsp;&nbsp;&nbsp;A-level(Advanced Level)考試係由AQA，OCR同Edexcel等多家考試局舉辦嘅分學科考試。\
+	作爲普通教育證書(GCE)嘅一部分，A-level考試被視爲英國高中畢業考試同大學入學考試。學生可以喺兩年中完成考試，其中每年完成3~4門科\
+	目啲考試。同其它大學入學考試唔同，A-level冇科目要求，因此考生選擇佢哋鍾意啲科目完成考試。除卻英國，其它國家，如新加坡、烏干達等\
+	亦都擁有A-level考試，同英國嘅只有小小區別。" ;
 	apt.innerHTML = "AP 考試" ;
-	apd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;AP考試(美國大學預科考試)係由College Board(美國大學理事會)舉辦的考試，在每\
-	年五月舉辦。佢的主要目的係爲高中學生提供大學預備課程，包括微積分，美國歷史，經濟學等多個方面，並且考試成績可以兌換美國大學學分\
-	。AP考試在所有國家及地區都有考點，根據所在的學校決定。考試成績按1~5畫分，其中1分爲最低，5分爲最高。部分美國大學要求學生擁有\
-	至少三門AP考試在4分及以上。" ;
+	apd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;美國大學預科(Advanced Level)係由美國大學理事會(College Board)組織並舉辦嘅，佢\
+	爲中學學生提供大學課程同考試，包括微積分、美國歷史、經濟學等。學生喺AP考試中攞到啲分數可以喺美國大學充當學分。AP考試喺每年五月嘅\
+	第一個禮拜一開始，並持續兩個禮拜。期間會有多過30場考試舉行。AP考試嘅分數畫分爲1~5分，其中1分爲最低，5分爲最高，表示學生對科目\
+	有非常之良好嘅瞭解。AP考試啲成績喺七月公開，考生可以喺考試成績公開後決定是否取消成績。" ;
 	st.innerHTML = "SAT 考試" ;
-	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;SAT係美國大學入學考試之一，由College Board在每年三、四、五、六、八、十、十二月\
-	舉辦(其中四、六、八月只在北美同歐洲舉辦)。佢測試考試閱讀，語法及算數(分爲兩部分，一部分唔可以使用計算器，另一部分可以使用)，\
-	另有作文可以選考，並單獨計分。SAT考試總分爲1600，1400分及以上爲較好之分數，部分美國頂尖大學會要求學生擁有1500及以上嘅SAT\
-	成績。SAT考試在香港同澳門都有考點，考生可以在任何時間登錄College Board官網報名考試。" ;
+	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;SAT喺美國大學理事會舉辦嘅標準化考試。作爲美國大學入學考試之一，SAT主要檢測學生是否\
+	申請大學啲基本條件。佢主要分爲三部分：閱讀、文法、數學，同埋可選考嘅作文。SAT考試喺三、四、五、六、八、十同十二月舉行(其中三、五、十、\
+	十二月喺香港同澳門有考點)。SAT考試時長爲大約3個鐘頭，作文另有50分鐘。考試分數介於400同1600之間，考生喺考試後三個禮拜可以得到\
+	分數。" ;
 	actt.innerHTML = "ACT 考試" ;
-	actd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;ACT係由非營利組織ACT主辦嘅美國大學入學考試，主要考察考生在英語，算數及科學\
-	嘅能力，佢嘅分數係由呢四科平均分計算嘅，總分36分，30及以上爲較好之分數。此外，考生亦可以選擇參加作文考試。ACT已經被美國\
-	所有嘅四年制大學及文理學院認可。" ;
+	actd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; ACT考試喺由非營利組織ACT舉辦嘅標準化美國大學入學考試。佢考察學生喺英文、數學、\
+	閱讀同埋科學嘅能力。考察啲各部分係單獨計分，分數介於1同36之間。ACT喺二、四、六、七、九、十同十二月有考試，考試時間大致爲3個鐘頭\
+	，但佢啲題目數量遠遠多過SAT嘅，因此考生要掌握喺短時間做題嘅能力。" ;
 	lm1.innerHTML = "瞭解更多" ;
 	lm2.innerHTML = "瞭解更多" ;
 	lm3.innerHTML = "瞭解更多" ;
