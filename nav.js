@@ -6,18 +6,6 @@ function nav ( ind )
 
     document.write ( "<nav id = 'Navigation' > " ) ;
     
-    document.write ( "<a href = 'main.html' id = 'nav-home' class = 'Navi " ) ;
-
-    if ( ind == 0 ) 
-        document.write ( "hovered' " ) ;
-    else 
-        document.write ( "'" ) ;
-
-    document.write ( ">" ) ;
-
-    document.write ( "Home" ) ;
-    document.write ( "</a>" ) ;
-    
     document.write ( "<a href = 'search.html' id = 'nav-search' class = 'Navi " ) ;
 
     if ( ind == 1 ) 
@@ -28,6 +16,18 @@ function nav ( ind )
     document.write ( ">" ) ;
 
     document.write ( "Search" ) ;
+    document.write ( "</a>" ) ;
+    
+    document.write ( "<a href = 'prac.html' id = 'nav-prac' class = 'Navi " ) ;
+
+    if ( ind == 1 ) 
+        document.write ( "hovered' " ) ;
+    else 
+        document.write ( "'" ) ;
+
+    document.write ( ">" ) ;
+
+    document.write ( "Practice" ) ;
     document.write ( "</a>" ) ;
 
 	document.write ( "<a href = 'experiment.html' id = 'nav-exp' class = 'Navi " ) ;
