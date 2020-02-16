@@ -1,0 +1,40 @@
+.layout
+{
+	font-family: 华文细黑 ;
+	margin: 20px 50px ; 
+	padding: 20px ;
+}
+
+.layout h2
+{
+	font-size: 30pt ;
+	text-align: center ;
+}
+
+.layout h3 
+{
+	font-size: 25pt ;
+}
+
+.layout h4
+{
+	font-size: 20pt ; 
+	text-align: center ;
+}
+
+.layout p
+{
+	font-size: 15pt ;
+}
+
+#about
+{
+	padding: 50px ;
+}
+
+#about-dev, #contact
+{
+	display: inline-grid ;
+	margin: 50px ;
+	width: 580px ;
+}
