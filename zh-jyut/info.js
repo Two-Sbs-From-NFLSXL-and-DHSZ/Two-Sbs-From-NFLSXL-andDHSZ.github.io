@@ -23,8 +23,8 @@ var ft = document.getElementById ( "foot" ) ;
 function translate_jyut () 
 {
 	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-jyut/information.css' >"
-	tt.innerHTML = "信息 - 國際考試助手"
-	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title-fan.jpg' > </a>"
+	tt.innerHTML = "信息"
+	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜尋" ;
 	np.innerHTML = "練習" ;
 	ne.innerHTML = "試驗" ;

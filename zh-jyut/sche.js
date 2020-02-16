@@ -11,8 +11,8 @@ var ft = document.getElementById ( "foot" ) ;
 
 function translate_jyut () 
 {
-	tt.innerHTML = "日程 - 國際考試助手"
-	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title-fan.jpg' > </a>"
+	tt.innerHTML = "日程"
+	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜尋" ;
 	np.innerHTML = "練習" ;
 	ne.innerHTML = "試驗" ;

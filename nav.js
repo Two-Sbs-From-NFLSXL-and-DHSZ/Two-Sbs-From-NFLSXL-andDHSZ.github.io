@@ -1,7 +1,7 @@
 function nav ( ind ) 
 {
 	document.write ( "<div id = 'header' > " ) ;
-    document.write ( "<a href = 'main.html'> <img src = 'repository/title-en.jpg' > </a> " ) ;
+    document.write ( "<a href = 'main.html'> <img src = 'repository/title.jpg' > </a> " ) ;
     document.write ( "</div>" ) ;
 
     document.write ( "<nav id = 'Navigation' > " ) ;
