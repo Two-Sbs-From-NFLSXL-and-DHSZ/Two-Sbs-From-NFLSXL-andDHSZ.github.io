@@ -19,7 +19,7 @@ var ft = document.getElementById ( "foot" ) ;
 
 function translate_fan () 
 {
-	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-jyut/home.css' >"
+	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-fan/home.css' >"
 	tt.innerHTML = "主頁"
 	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜尋" ;
