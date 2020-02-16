@@ -35,7 +35,7 @@ function translate_zh ()
 	实验，让学生能够顺利通过有关的实验考试。" ;
 	it.innerHTML = "信息" ;
 	id.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;本网站提供关于A-level、AP、SAT和ACT的备考资料，包括考试时间、官方指南、考生须知等\
-	帮助考试在考试前掌握所需的资料并做好准备。" ;
+	帮助考生在考试前掌握所需的资料并做好准备。" ;
 	st.innerHTML = "日程表" ;
 	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 本网站提供为考生准备的考试日程表，其中囊括了国际考试注册截止日期和考试时间，帮\
 	助考生合理计划时间并充分准备考试，避免错过重要的考试。" 
