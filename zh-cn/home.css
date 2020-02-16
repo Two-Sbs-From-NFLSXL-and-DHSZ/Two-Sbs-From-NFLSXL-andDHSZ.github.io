@@ -1,0 +1,64 @@
+.photo
+{
+	background-image: url( "http://www.h-helfer.com/repository/preface.jpg" ) ;
+	font-family: 华文细黑;
+	height: auto ;
+	text-align: center ;
+}
+
+.photo #photo-desp
+{
+	font-size: 50px ;
+	padding: 200px 100px 50px 100px ;
+}
+
+.photo button
+{
+	background-color: #FFF ;
+	border: none ;
+	color: #4169E1 ;
+	font-size: 20px ;
+	font-weight: bold ;
+	margin: 100px ;
+	padding: 20px 50px ;
+	text-decoration: none ;
+	text-transform: capitalize ; 
+	transition: background-color 1s ;
+}
+
+.photo button:hover
+{
+	background-color: #4169E1 ;
+	color: #FFF ;
+}
+
+.bigmodel
+{
+	font-family: 华文细黑;
+	margin: 20px ;
+}
+
+
+.model 
+{
+	border: solid #000 ; 
+	color: #000 ;
+	display: inline-grid; 
+	font-size: 20px ;
+	padding: 20px ;
+	margin: 20px ;
+	text-decoration: none ; 
+	width: 405px ;
+	height: 400px ;
+}
+
+.model h2
+{
+	text-align: center ;
+}
+
+.model img
+{
+	height: 50px ;
+	width: auto ;
+}
