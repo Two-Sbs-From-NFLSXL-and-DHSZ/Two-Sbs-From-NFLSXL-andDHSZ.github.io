@@ -57,7 +57,7 @@
     </select>
 
     <script type="text/javascript">
-        if ( get_cookie ( "lang" ) == "jyut" ) 
+        if ( getCookie ( "lang" ) == "jyut" ) 
         {
             translate_jyut () ;
 
@@ -67,7 +67,7 @@
             <option value = 'translate_jyut (); ' selected = 'selected' > 中文繁體(中國香港及澳門) </option>\
             <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
         }
-        else if ( get_cookie ( "lang" ) == "zh" ) 
+        else if ( getCookie ( "lang" ) == "zh" ) 
         {
             translate_zh () ;
 
@@ -77,7 +77,7 @@
             <option value = 'translate_jyut (); ' > 中文繁體(中國香港及澳門) </option>\
             <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
         }
-        else if ( get_cookie ( "lang" ) == "zh-fan" ) 
+        else if ( getCookie ( "lang" ) == "zh-fan" ) 
         {
             translate_fan () ;
 
