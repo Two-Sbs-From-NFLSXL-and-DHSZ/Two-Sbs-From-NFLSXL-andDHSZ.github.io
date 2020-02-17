@@ -8,6 +8,9 @@
     <script type = "text/javascript" src = "nav.js" >
     </script>
 
+    <script type="text/javascript" src = "get_cookie.js" > 
+    </script>
+
     <link rel = 'shortcut icon' href = 'repository/favicon.ico'>
     <link rel = 'stylesheet' type = 'text/css' href = 'general.css' >
 
@@ -84,7 +87,7 @@
     </select>
 
     <script type="text/javascript">
-        if ( document.cookie == "lang=jyut" ) 
+        if ( get_cookie ( "lang" ) == "jyut" ) 
         {
             translate_jyut () ;
 
@@ -94,7 +97,7 @@
             <option value = 'translate_jyut (); ' selected = 'selected' > 中文繁體(中國香港及澳門) </option>\
             <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
         }
-        else if ( document.cookie == "lang=zh" ) 
+        else if ( get_cookie ( "lang" ) == "zh" ) 
         {
             translate_zh () ;
 
@@ -104,7 +107,7 @@
             <option value = 'translate_jyut (); ' > 中文繁體(中國香港及澳門) </option>\
             <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
         }
-        else if ( document.cookie == "lang=zh-fan" ) 
+        else if ( get_cookie ( "lang" ) == "zh-fan" ) 
         {
             translate_fan () ;
 
