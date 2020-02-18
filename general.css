@@ -4,6 +4,16 @@
   padding: 0 ;
 }
 
+.eng
+{
+  font-family: Calibri Light ;
+}
+
+.chn
+{
+  font-family: 华文细黑 ;
+}
+
 a 
 {
   text-decoration: none ;
