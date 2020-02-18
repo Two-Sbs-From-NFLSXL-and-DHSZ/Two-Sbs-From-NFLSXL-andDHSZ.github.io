@@ -1,4 +1,3 @@
-var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
 var nsc = document.getElementById ( "nav-search" ) ;
@@ -17,7 +16,7 @@ function translate_zh ()
 	np.innerHTML = "练习" ;
 	ne.innerHTML = "实验" ;
 	ni.innerHTML = "信息" ;
-	ns.innerHTML = "日程表" ;
+	ns.innerHTML = "日程" ;
 	na.innerHTML = "关于" ;
 	ft.innerHTML = "语言：" ;
 
