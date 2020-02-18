@@ -1,4 +1,3 @@
-var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
 var nsc = document.getElementById ( "nav-search" ) ;
@@ -17,7 +16,6 @@ var ft = document.getElementById ( "foot" ) ;
 
 function translate_jyut () 
 {
-	gcs.innerHTML = "<link rel = 'stylesheet' type = 'text/css' href = 'zh-jyut/about.css' >"
 	tt.innerHTML = "關於"
 	hi.innerHTML = "<a href = 'main.html'> <img src = 'repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜尋" ;
@@ -26,14 +24,12 @@ function translate_jyut ()
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
-	at.innerHTML = "關於網站" ;
-	ad.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢個網站喺由Martin Zhou同David Fu擁有同埋設計，並基於GitHub Pages開放嘅。佢嘅\
-	主要目的係幫助希望進入美國同英國大學啲高中學生喺如A-level，SAT同AP考試中得到理想嘅分數。呢個網站提供搜尋題目、線上練習同試驗\
-	等畀學生，幫助佢哋解決問題並提高考試成績。我哋希望您可以享受喺呢度嘅體驗。" ;
-	adt.innerHTML = "關於開發者" ;
-	add.innerHTML = "暫無內容" ;
-	ct.innerHTML = "聯繫我哋" ;
-	cd.innerHTML = "暫無內容" ;
+	at.innerHTML = "<div class = 'chn' > 關於網站 </div>" ;
+	ad.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 呢個網站喺由Martin Zhou同David Fu擁有同埋設計，並基於GitHub Pages開發嘅。佢嘅主要目的係幫助希望進入美國同英國大學啲高中學生喺如A-level，SAT同AP考試中得到理想嘅分數。呢個網站提供搜尋題目、線上練習同試驗等畀學生，幫助佢哋解決問題並提高考試成績。我哋希望您可以享受喺呢度嘅體驗。 </div>" ;
+	adt.innerHTML = "<div class = 'chn' > 關於開發者 </div>" ;
+	add.innerHTML = "<div class = 'chn' > 暫無內容 </div>" ;
+	ct.innerHTML = "<div class = 'chn' > 聯繫我哋 </div>" ;
+	cd.innerHTML = "<div class = 'chn' > 暫無內容 </div>" ;
 	ft.innerHTML = "語言：" ;
 
 	document.cookie = "lang = jyut; expires=Fri, 31 Dec 9999 23:59:59 GMT" ;

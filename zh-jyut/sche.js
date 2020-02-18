@@ -1,4 +1,3 @@
-var gcs = document.getElementById ( "gcs" ) ;
 var tt = document.getElementById ( "tit" ) ;
 var hi = document.getElementById ( "header" ) ;
 var nsc = document.getElementById ( "nav-search" ) ;
