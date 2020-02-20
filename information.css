@@ -8,23 +8,28 @@
 	background-color: #FFF ;
 	border: solid #000 ;
 	font-size: 15pt ;
-	margin: 20px ;
+	margin: 20px 50px ;
 	padding: 20px ;
+	transition: transform 1s ;
+	text-align: center ;
 }
 
 .info:hover 
 {
-	background-color: #4169E1 ;
-	color: #FFF ;
+	transform: scale( 1.05 ) ;
 }
 
-.info button
+.info h2, p
+{
+	text-align: left ;
+}
+
+button
 {
 	background-color: #FEDB00 ;
 	border: none ;
 	color: #000 ;
-	display: block;
-	margin: 20px 600px 10px 600px ;
+	margin: 20px ;
 	padding: 10px 20px 10px 20px ;
 	text-align: center ;
 	text-decoration: none ;
