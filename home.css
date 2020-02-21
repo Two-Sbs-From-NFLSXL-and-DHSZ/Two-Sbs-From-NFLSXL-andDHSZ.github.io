@@ -15,7 +15,7 @@
 {
 	background-color: #FFF ;
 	border: none ;
-	color: #4169E1 ;
+	color: #4695ED ;
 	font-size: 20px ;
 	font-weight: bold ;
 	margin: 100px ;
@@ -27,7 +27,7 @@
 
 .photo button:hover
 {
-	background-color: #4169E1 ;
+	background-color: #4695ED ;
 	color: #FFF ;
 }
 
