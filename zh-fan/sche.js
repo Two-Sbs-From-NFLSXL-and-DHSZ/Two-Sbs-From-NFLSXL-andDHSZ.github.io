@@ -20,7 +20,7 @@ function translate_fan ()
 	na.innerHTML = "關於" ;
 	ft.innerHTML = "語言：" ;
 
-	counterdown_fan () ;
+	countdown_fan () ;
 	
 	document.cookie = "lang = zh-fan; expires=Fri, 31 Dec 9999 23:59:59 GMT" ;
 }
