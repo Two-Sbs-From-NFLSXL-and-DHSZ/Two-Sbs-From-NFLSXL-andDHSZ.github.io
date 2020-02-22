@@ -70,16 +70,16 @@ function countdown_jyut ()
 	{
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
 
-		str += ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #4695ED' > <p> <span ` ) ;
+		str += ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #4695ED' > <p class = 'chn' > <span ` ) ;
 
 		if ( d <= 10 ) 
 			str += ( "class = 'red' > " ) ;
 		else 
-			str += ( '>' ) ;
+			str += ( '> ' ) ;
 
 		str += ( `${ d } </span> 天` ) ;
 
-		str += ( ` 下一場 ${ dict [ i ].id } 考試 </a>` ) ;
+		str += ( ` 下一場 ${ dict [ i ].id } 考試 </p> </a>` ) ;
 	}
 
 	desp.innerHTML = "<h4 class = 'chn' > 即將來臨 </h4>" + str ;

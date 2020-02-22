@@ -62,8 +62,6 @@ function countdown ()
 
 	dict.sort ( function ( a , b ) { return a.value - b.value } ) ;
 
-	var str = "" ;
-
 	for ( var i = 0 ; i < 4 ; i++ ) 
 	{
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
@@ -73,17 +71,15 @@ function countdown ()
 		if ( d <= 10 ) 
 			document.write ( "class = 'red' > " ) ;
 		else 
-			document.write ( '>' ) ;
+			document.write ( '> ' ) ;
 
 		document.write ( `${ d } </span> day` ) ;
 
 		if ( d >= 2 ) 
 			document.write ( 's' ) ;
 
-		document.write ( ` before next ${ dict [ i ].id } test </a>` ) ;
+		document.write ( ` before next ${ dict [ i ].id } test </p> </a>` ) ;
 	}
-
-	desp.innerHTML = str ;
 }
 
 countdown () ;
