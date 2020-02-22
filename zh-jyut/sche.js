@@ -6,6 +6,7 @@ var ne = document.getElementById ( "nav-exp" ) ;
 var ni = document.getElementById ( "nav-info" ) ;
 var ns = document.getElementById ( "nav-sche" ) ;
 var na = document.getElementById ( "nav-about" ) ;
+var cd = document.getElementById ( "countdown" ) ;
 var ft = document.getElementById ( "foot" ) ;
 
 function translate_jyut () 
@@ -20,6 +21,7 @@ function translate_jyut ()
 	na.innerHTML = "關於" ;
 	ft.innerHTML = "語言：" ;
 
+	countdown_jyut () ;
 	
 	document.cookie = "lang = jyut; expires=Fri, 31 Dec 9999 23:59:59 GMT" ;
 }
