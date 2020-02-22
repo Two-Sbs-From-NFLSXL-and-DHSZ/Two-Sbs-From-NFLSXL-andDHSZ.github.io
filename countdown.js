@@ -80,7 +80,7 @@ function countdown ()
 		if ( d >= 2 ) 
 			document.write ( 's' ) ;
 
-		document.write ( ` before ${ dict [ i ].id } test </a>` ) ;
+		document.write ( ` before next ${ dict [ i ].id } test </a>` ) ;
 	}
 }
 
