@@ -1,5 +1,3 @@
-var id = document.getElementById ( "countdown" ) ;
-
 var sat = [ 314 , 502 , 606 , 829 , 1003 , 1107 , 1205 ] ;
 var act = [ 208 , 404 , 613 , 718 , 912 , 1024 , 1212 ] ;
 var ap = [ 504 , 505 , 506 , 507 , 508 , 511 , 512 , 513 , 514 , 515 ] ;
@@ -64,6 +62,8 @@ function countdown ()
 
 	dict.sort ( function ( a , b ) { return a.value - b.value } ) ;
 
+	var str = "" ;
+
 	for ( var i = 0 ; i < 4 ; i++ ) 
 	{
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
@@ -82,6 +82,8 @@ function countdown ()
 
 		document.write ( ` before next ${ dict [ i ].id } test </a>` ) ;
 	}
+
+	desp.innerHTML = str ;
 }
 
 countdown () ;
