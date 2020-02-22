@@ -23,7 +23,7 @@ function day ( m1 , d1 , m2 , d2 )
 	return count ;
 }
 
-function countdown_jyut ()
+function countdown_zh ()
 {
 	var cd = new Date () ;
 	var cdm = cd.getMonth () ;
@@ -79,8 +79,8 @@ function countdown_jyut ()
 
 		str += ( `${ d } </span> 天` ) ;
 
-		str += ( ` 下一場 ${ dict [ i ].id } 考試 </a>` ) ;
+		str += ( ` 下一场 ${ dict [ i ].id } 考试 </a>` ) ;
 	}
 
-	desp.innerHTML = "<h4 class = 'chn' > 即將來臨 </h4>" + str ;
+	desp.innerHTML = "<h4 class = 'chn' > 即将来临 </h4>" + str ;
 }

@@ -23,7 +23,7 @@ function day ( m1 , d1 , m2 , d2 )
 	return count ;
 }
 
-function countdown_jyut ()
+function countdown_fan ()
 {
 	var cd = new Date () ;
 	var cdm = cd.getMonth () ;
