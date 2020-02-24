@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang = "en" >
+<head>
+    <script type = "text/javascript" src = "head.js" >
+    </script>
+
+    <script type = "text/javascript" src = "nav.js" >
+    </script>
+
+    <script type="text/javascript" src = "../get_cookie.js" > 
+    </script>
+
+    <link rel = 'shortcut icon' href = '../repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = 'general.css' >
+
+    <script type = "text/javascript">
+        head ( "SAT" ) ;
+    </script>
+</head>
+
+<body class = "eng" > 
+    <script type = "text/javascript">
+        nav () ;
+    </script>
+
+    <div class = "big-countdown" > 
+        <div id = "c-title" > 
+            <h2 id = "title-desp" > 
+                Next SAT Test: 
+            </h2>
+
+            <p id = "number" >
+            </p>
+        </div>
+
+        <div class = "countdown" >
+            <div class = "month" >
+                <h4 id = 'month-desp' > Month </h4>
+
+                <p id = "month" > </p>
+            </div>
+
+            <div class = "day" >
+                <h4 id = 'day-desp' > Day </h4>
+
+                <p id = "day" > </p>
+            </div>
+
+            <div class = "hour" >
+                <h4 id = 'hour-desp' > Hour </h4>
+
+                <p id = "hour" > </p>
+            </div>
+
+            <div class = "minute" >
+                <h4 id = 'minute-desp' > Minute </h4>
+
+                <p id = "minute" > </p>
+            </div>
+
+            <div class = "second" >
+                <h4 id = 'second-desp' > Second </h4>
+
+                <p id = "second" > </p>
+            </div>
+        </div>
+    </div>
+
+    <script type = "text/javascript" src = "countdown.js" >
+    </script>
+
+    <script type = "text/javascript" >
+        window.onload = function ()
+        {
+            setInterval ( 'countdownsat ()' , 1000 );
+        }
+    </script>
+
+    <div align = "middle" >
+        <table id = "status" align = "middle" >
+        </table>
+    </div>
+    
+    <script type = "text/javascript" src = "sat.js" > 
+    </script>
+</body>
+
+<footer class = "eng" >
+    <p id = "foot"> Language: </p>
+
+    <script type = "text/javascript" src = "../zh-jyut/sche-sat.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../zh-cn/sche-sat.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../zh-fan/sche-sat.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../zh-jyut/sche-sat-aux.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../zh-cn/sche-sat-aux.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../zh-fan/sche-sat-aux.js" >
+    </script>
+
+    <select onchange = 'eval ( options[selectedIndex].value ) ;' id = "lang" >
+        <option value = "document.cookie = 'lang = en' ; location.reload ()" > English </option>
+        <option value = "translate_zh (); " > 中文简体 </option>
+        <option value = "translate_jyut (); " > 中文繁體(中國香港及澳門) </option>
+        <option value = "translate_fan (); " > 中文繁體(中國臺灣) </option>  
+    </select>
+
+    <script type="text/javascript">
+        if ( getCookie ( "lang" ) == "jyut" ) 
+        {
+            translate_jyut () ;
+
+            document.getElementById ( "lang" ).innerHTML = "\
+            <option value = \"document.cookie = 'lang = en' ; location.reload ()\" > English </option>\
+            <option value = 'translate_zh () ' > 中文简体 </option>\
+            <option value = 'translate_jyut (); ' selected = 'selected' > 中文繁體(中國香港及澳門) </option>\
+            <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
+        }
+        else if ( getCookie ( "lang" ) == "zh" ) 
+        {
+            translate_zh () ;
+
+            document.getElementById ( "lang" ).innerHTML = "\
+            <option value = \"document.cookie = 'lang = en' ; location.reload ()\" > English </option>\
+            <option value = 'translate_zh () ' selected = 'selected' > 中文简体 </option>\
+            <option value = 'translate_jyut (); ' > 中文繁體(中國香港及澳門) </option>\
+            <option value = 'translate_fan () ' > 中文繁體(中國臺灣) </option>" ;
+        }
+        else if ( getCookie ( "lang" ) == "zh-fan" ) 
+        {
+            translate_fan () ;
+
+            document.getElementById ( "lang" ).innerHTML = "\
+            <option value = \"document.cookie = 'lang = en' ; location.reload ()\" > English </option>\
+            <option value = 'translate_zh () ' > 中文简体 </option>\
+            <option value = 'translate_jyut (); ' > 中文繁體(中國香港及澳門) </option>\
+            <option value = 'translate_fan () ' selected = 'selected' > 中文繁體(中國臺灣) </option>" ;
+        }
+    </script>
+    
+</footer>
+
+</html>

@@ -1,0 +1,144 @@
+*
+{
+  margin: 0 ; 
+  padding: 0 ;
+}
+
+.eng
+{
+  font-family: Calibri Light ;
+}
+
+.chn
+{
+  font-family: 华文细黑 ;
+}
+
+.cancel , .end
+{
+  color: #A9A9A9 ;
+}
+
+.score , .ongoing
+{
+  color: #00FF00 ;
+}
+
+.reg-end , .urgent
+{
+  color: #FF0000 ;
+}
+
+.ava
+{
+  color: #1E90FF ;
+}
+
+a 
+{
+  text-decoration: none ;
+}
+
+#header
+{
+  display: inline ;
+}
+
+#header img
+{
+  height: auto ;
+  margin: 20px 0 0 0 ;
+  width: 500px ;
+}
+
+#Navigation 
+{
+	background-color: #FFF ;
+  font-family: Calibri Light ;
+  display: inline ;
+}
+
+.Navi
+{
+  color: #000 ;
+  display: inline-block ;
+  font-family: 'Oswald' , sans-serif ;
+  font-size: 16px ;
+  font-weight: 300 ;
+  height: 20px;
+  margin: 15px auto ;
+  padding: 0 20px ;
+  text-align: center ;
+  text-decoration: none ;
+  text-transform: uppercase ;
+  width: 100px ;
+}
+
+.Navi:hover 
+{
+  box-shadow: 0 5px #B0C4DE ;
+}
+
+.hovered
+{
+  box-shadow: 0 5px #4695ED ;
+}
+
+.big-countdown
+{
+  text-align: center ;
+}
+
+#c-title h2 , #c-title p
+{
+  display: inline-block ; 
+  font-family: Calibri Light ;
+  font-size: 30pt ;
+  font-weight: 700 ;
+  margin: 50px 0 20px 0;
+}
+
+.countdown div
+{
+  display: inline-block ;
+  font-size: 30pt ;
+  margin: 50px ;
+}
+
+.countdown p 
+{
+  font-family: 华文细黑 ;
+  font-size: 50pt ;
+  text-align: center ;
+}
+
+table th
+{
+  font-size: 15pt ;
+  margin: 20px ;
+  padding: 20px 50px ;
+  text-align: center ;
+}
+
+#first-line th
+{
+  font-size: 25pt ;
+}
+
+footer 
+{
+  background-color: #696969 ;
+  font-family: Calibri Light ;
+}
+
+footer p
+{
+  color: #FFF ;
+  display: inline-block ; 
+  padding: 20px ;
+}
+
+footer select
+{
+  display: inline-block ; 
+}

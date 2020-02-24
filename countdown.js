@@ -1,6 +1,6 @@
 var sat = [ 314 , 502 , 606 , 829 , 1003 , 1107 , 1205 ] ;
 var act = [ 208 , 404 , 613 , 718 , 912 , 1024 , 1212 ] ;
-var ap = [ 504 , 505 , 506 , 507 , 508 , 511 , 512 , 513 , 514 , 515 ] ;
+var ap = 504 ;
 var alevel = 511 ;
 
 var dict = [ { id: '' , value: 0 } , { id: '' , value: 0 } , { id: '' , value: 0 } , { id: '' , value: 0 } ] ;
@@ -13,9 +13,9 @@ function day ( m1 , d1 , m2 , d2 )
 
 	if ( m2 < m1 || ( m1 == m2 && d2 < d1 ) ) return -1 ;
 
-	var count = md [ m1 ] - d1 + d2 ;
+	var count = d2 - d1 ;
 
-	for ( var i = m1 + 1 ; i < m2 ; i++ )
+	for ( var i = m1 ; i < m2 ; i++ )
 		count += md [ i ] ;
 
 	return count ;
@@ -54,17 +54,16 @@ function countdown ()
 
 	i = 0 ;
 
-	while ( day ( cdm , cdd , parseInt ( ap [ i ] / 100 ) , ap [ i ] % 100 ) == -1 ) 
-		i++ ;
-
 	dict [ 3 ].id = "AP" ;
-	dict [ 3 ].value = ap [ i ] ; 
+	dict [ 3 ].value = ap ;
 
 	dict.sort ( function ( a , b ) { return a.value - b.value } ) ;
 
 	for ( var i = 0 ; i < 4 ; i++ ) 
 	{
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
+
+		if ( d < 0 ) d = 0 ;
 
 		document.write ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #4695ED' > <p> <span ` ) ;
 
@@ -78,7 +77,10 @@ function countdown ()
 		if ( d >= 2 ) 
 			document.write ( 's' ) ;
 
-		document.write ( ` before next ${ dict [ i ].id } test </p> </a>` ) ;
+		if ( dict [ i ].id == "SAT" || dict [ i ].id == "ACT" ) 
+			document.write ( ` before next ${ dict [ i ].id } test </p> </a>` ) ;
+		else
+			document.write ( ` before ${ yy } ${ dict [ i ].id } test </p> </a>` ) ;
 	}
 }
 
