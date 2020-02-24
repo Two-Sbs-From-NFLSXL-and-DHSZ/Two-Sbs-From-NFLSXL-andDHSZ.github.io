@@ -10,13 +10,13 @@
 	font-size: 15pt ;
 	margin: 20px 50px ;
 	padding: 20px ;
-	transition: transform 1s ;
+	transition: .3s ease-in;
 	text-align: center ;
 }
 
 .info:hover 
 {
-	transform: scale( 1.05 ) ;
+	box-shadow: 13px 32px 36px -14px hsla(0, 0%, 70%, 0.5);
 }
 
 .info h2, p
