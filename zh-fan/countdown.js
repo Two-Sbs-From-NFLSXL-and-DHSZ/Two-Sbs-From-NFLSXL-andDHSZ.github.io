@@ -79,7 +79,10 @@ function countdown_fan ()
 
 		str += ( `${ d } </span> 天` ) ;
 
-		str += ( ` 下一場 ${ dict [ i ].id } 考試 </p> </a>` ) ;
+		if ( dict [ i ].id == "SAT" || dict [ i ].id == "ACT" ) 
+			str += ` 下一場 ${ dict [ i ].id } 考試 </p> </a>` ;
+		else
+			str += ` ${ yy } ${ dict [ i ].id } 考試 </p> </a>` ;
 	}
 
 	desp.innerHTML = "<h4 class = 'chn' > 即將來臨 </h4>" + str ;

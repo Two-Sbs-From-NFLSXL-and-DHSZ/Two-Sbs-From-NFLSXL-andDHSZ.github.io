@@ -79,7 +79,10 @@ function countdown_zh ()
 
 		str += ( `${ d } </span> 天` ) ;
 
-		str += ( ` 下一场 ${ dict [ i ].id } 考试 </p> </a>` ) ;
+		if ( dict [ i ].id == "SAT" || dict [ i ].id == "ACT" ) 
+			str += ` 下一场 ${ dict [ i ].id } 考试 </p> </a>` ;
+		else
+			str += ` ${ yy } ${ dict [ i ].id } 考试 </p> </a>` ;
 	}
 
 	desp.innerHTML = "<h4 class = 'chn' > 即将来临 </h4>" + str ;
