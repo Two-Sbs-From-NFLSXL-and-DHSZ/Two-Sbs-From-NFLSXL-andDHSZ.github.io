@@ -15,7 +15,7 @@ function comp ( date )
 	else return 1 ;
 }
 
-function alevel_status_fan ()
+function alevel_status_zh ()
 {
 	var str = "<tr id = 'first-line' class = 'chn' > <th> 举办机构 </th> <th> 开始时间 </th> <th> 结束时间 </th> </tr>" ;
 
