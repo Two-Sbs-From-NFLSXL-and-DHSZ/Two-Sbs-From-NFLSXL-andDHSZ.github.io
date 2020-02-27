@@ -76,12 +76,12 @@ a
 
 .Navi:hover 
 {
-  box-shadow: 0 5px #B0C4DE ;
+  color: #4695ED ;
 }
 
 .hovered
 {
-  box-shadow: 0 5px #4695ED ;
+  color: #4695ED ;
 }
 
 .big-countdown
