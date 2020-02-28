@@ -27,7 +27,6 @@ function translate_zh ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "关于" ;
 	pd.innerHTML = "<div class = 'chn' > 有题目不会做？来找下答案！ </div>" ;
-	pb.innerHTML = "<div class = 'chn' > 拍照 </div>" ;
 	et.innerHTML = "<div class = 'chn' > 实验 </div>" ;
 	ed.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 本网站提供线上实验室功能，帮助学生足不出户便可以完成在实验室才能完成的物理和化学实验，让学生能够顺利通过有关的实验考试。 </div>" ;
 	it.innerHTML = "<div class = 'chn' > 信息 </div>" ;
