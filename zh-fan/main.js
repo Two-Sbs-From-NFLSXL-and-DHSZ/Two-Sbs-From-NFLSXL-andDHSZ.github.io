@@ -27,7 +27,6 @@ function translate_fan ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
 	pd.innerHTML = "<div class = 'chn' > 有題目不會做？來找下答案! </div>" ;
-	pb.innerHTML = "<div class = 'chn' > 拍照 </div>" ;
 	et.innerHTML = "<div class = 'chn' > 試驗 </div>" ;
 	ed.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 本網站提供線上實驗室功能，幫助學生足不出戶便可以完成在實驗室才能完成的物理和化學實驗，讓學生能夠順利通過相關的實驗測試。 </div>" ;
 	it.innerHTML = "<div class = 'chn' > 信息 </div>" ;
