@@ -27,7 +27,6 @@ function translate_jyut ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
 	pd.innerHTML = "<div class = 'chn' > 唔會呢條題？嚟搵下題目嘅答案! </div>" ;
-	pb.innerHTML = "<div class = 'chn' > 影像 </div>" ;
 	et.innerHTML = "<div class = 'chn' > 試驗 </div>" ;
 	ed.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 呢度提供嘅線上實驗室幫助學生喺冇辦法做線下試驗時亦可以喺網上完成各種各樣啲物理同埋化學嘅試驗，幫助佢哋順利通過有關啲試驗測試。 </div>" ;
 	it.innerHTML = "<div class = 'chn' > 信息 </div>" ;
