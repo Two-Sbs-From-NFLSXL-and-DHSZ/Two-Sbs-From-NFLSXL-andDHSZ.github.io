@@ -17,7 +17,7 @@ var ft = document.getElementById ( "foot" ) ;
 function translate_jyut () 
 {
 	tt.innerHTML = "SAT - 日程"
-	hi.innerHTML = "<a href = 'main.html'> <img src = '../repository/title.jpg' > </a>"
+	hi.innerHTML = "<a href = '../main.html'> <img src = '../repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜尋" ;
 	np.innerHTML = "練習" ;
 	ne.innerHTML = "試驗" ;
