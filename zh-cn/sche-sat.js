@@ -17,7 +17,7 @@ var ft = document.getElementById ( "foot" ) ;
 function translate_zh () 
 {
 	tt.innerHTML = "SAT - 日程"
-	hi.innerHTML = "<a href = 'main.html'> <img src = '../repository/title.jpg' > </a>"
+	hi.innerHTML = "<a href = '../main.html'> <img src = '../repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜索" ;
 	np.innerHTML = "练习" ;
 	ne.innerHTML = "实验" ;

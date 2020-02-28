@@ -18,7 +18,7 @@ var ft = document.getElementById ( "foot" ) ;
 function translate_zh () 
 {
 	tt.innerHTML = "AP - 日程"
-	hi.innerHTML = "<a href = 'main.html'> <img src = '../repository/title.jpg' > </a>"
+	hi.innerHTML = "<a href = '../main.html'> <img src = '../repository/title.jpg' > </a>"
 	nsc.innerHTML = "搜索" ;
 	np.innerHTML = "练习" ;
 	ne.innerHTML = "实验" ;
@@ -37,5 +37,5 @@ function translate_zh ()
 
 	ft.innerHTML = "语言：" ;
 	
-	document.cookie = "lang = zh; expires=Fri, 31 Dec 9999 23:59:59 GMT; path = ../" ;
+	document.cookie = "lang = zh; expires=Fri, 31 Dec 9999 23:59:59 GMT" ;
 }
