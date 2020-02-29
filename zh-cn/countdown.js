@@ -70,7 +70,7 @@ function countdown_zh ()
 	{
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
 
-		str += ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #4695ED' > <p class = 'chn' > <span ` ) ;
+		str += ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #00DFB9' > <p class = 'chn' > <span ` ) ;
 
 		if ( d <= 10 ) 
 			str += ( "class = 'red' > " ) ;
