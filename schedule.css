@@ -5,7 +5,7 @@
 
 #first
 {
-	color: #6495ED;
+	color: #00DFB9;
 	text-transform: uppercase ;
 }
 
@@ -24,7 +24,7 @@ th
 
 #schetable
 {
-	background-color: #4695ED ;
+	background-color: #00DFB9 ;
 }
 
 th
@@ -68,8 +68,8 @@ button
 
 #countdown
 {
-	background-color: #4995ED ;
-	border: 2px solid #4695ED ;
+	background-color: #00DFB9 ;
+	border: 2px solid #00DFB9 ;
 	border-radius: 10px 10px 0 0 ;
 	position: absolute ;
 	right: 25px ;
