@@ -26,13 +26,13 @@ function translate_fan ()
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
-	pd.innerHTML = "<div class = 'chn' > 有題目不會做？來找下答案! </div>" ;
-	et.innerHTML = "<div class = 'chn' > 試驗 </div>" ;
-	ed.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 本網站提供線上實驗室功能，幫助學生足不出戶便可以完成在實驗室才能完成的物理和化學實驗，讓學生能夠順利通過相關的實驗測試。 </div>" ;
-	it.innerHTML = "<div class = 'chn' > 信息 </div>" ;
-	id.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 本網站提供關於A-level、AP、SAT和ACT的備考資料，包括考試時間、官方指南、考生須知等，幫助考生在考試前掌握所需的資料並做好充足準備。 </div>" ;
-	st.innerHTML = "<div class = 'chn' > 日程 </div>" ;
-	sd.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 本網站提供為考生準備的考試日程表，其中囊括了國際考試註冊截止日期和考試時間，幫助考生合理規劃安排時間，並充分準備考試，避免錯過重要的考試。。 </div>" 
+	pd.innerHTML = "有題目不會做？來找下答案!" ;
+	et.innerHTML = "試驗" ;
+	ed.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 本網站提供線上實驗室功能，幫助學生足不出戶便可以完成在實驗室才能完成的物理和化學實驗，讓學生能夠順利通過相關的實驗測試。" ;
+	it.innerHTML = "信息" ;
+	id.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 本網站提供關於A-level、AP、SAT和ACT的備考資料，包括考試時間、官方指南、考生須知等，幫助考生在考試前掌握所需的資料並做好充足準備。" ;
+	st.innerHTML = "日程" ;
+	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 本網站提供為考生準備的考試日程表，其中囊括了國際考試註冊截止日期和考試時間，幫助考生合理規劃安排時間，並充分準備考試，避免錯過重要的考試。。" 
 	ft.innerHTML = "語言：" ;
 
 

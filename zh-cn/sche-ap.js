@@ -26,14 +26,14 @@ function translate_zh ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "关于" ;
 	
-	titd.innerHTML = "<div class = 'chn' > 距离2020 AP考试: </div>" ;
-	mmd.innerHTML = "<div class = 'chn' > 月 </div>" ;
-	dayd.innerHTML = "<div class = 'chn' > 天 </div>" ;
-	hd.innerHTML = "<div class = 'chn' > 小时 </div>" ;
-	mind.innerHTML = "<div class = 'chn' > 分钟 </div>" ;
-	sd.innerHTML = "<div class = 'chn' > 秒 </div>" ;
+	titd.innerHTML = "距离2020 AP考试:" ;
+	mmd.innerHTML = "月" ;
+	dayd.innerHTML = "天" ;
+	hd.innerHTML = "小时" ;
+	mind.innerHTML = "分钟" ;
+	sd.innerHTML = "秒" ;
 
-	fir.innerHTML = "<th class = 'chn' > 考试科目 </th> <th class = 'chn' > 考试时间 </th> <th class = 'chn' > 距离考试开始时间 </th>" ;
+	fir.innerHTML = "<th> 考试科目 </th> <th> 考试时间 </th> <th> 距离考试开始时间 </th>" ;
 
 	ft.innerHTML = "语言：" ;
 	

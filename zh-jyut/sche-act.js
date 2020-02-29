@@ -25,12 +25,12 @@ function translate_jyut ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
 
-	titd.innerHTML = "<div class = 'chn' > 下一場ACT考試: </div>" ;
-	mmd.innerHTML = "<div class = 'chn' > 月 </div>" ;
-	dayd.innerHTML = "<div class = 'chn' > 天 </div>" ;
-	hd.innerHTML = "<div class = 'chn' > 時 </div>" ;
-	mind.innerHTML = "<div class = 'chn' > 分 </div>" ;
-	sd.innerHTML = "<div class = 'chn' > 秒 </div>" ;
+	titd.innerHTML = "下一場ACT考試:" ;
+	mmd.innerHTML = "月" ;
+	dayd.innerHTML = "天" ;
+	hd.innerHTML = "時" ;
+	mind.innerHTML = "分" ;
+	sd.innerHTML = "秒" ;
 
 	ft.innerHTML = "語言：" ;
 

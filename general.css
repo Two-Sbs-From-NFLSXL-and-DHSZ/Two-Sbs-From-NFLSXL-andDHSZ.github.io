@@ -1,17 +1,8 @@
 *
 {
+  font-family: 华文细黑 ;
   margin: 0 ; 
   padding: 0 ;
-}
-
-.eng
-{
-  font-family: Calibri Light ;
-}
-
-.chn
-{
-  font-family: 华文细黑 ;
 }
 
 a 
@@ -75,14 +66,17 @@ footer
 
 footer p
 {
-  color: #00DFB9 ;
+  color: #FFF ;
   display: inline-block ; 
+  font-size: 20pt ;
   padding: 20px ;
 }
 
 footer select
 {
   background-color: #000 ;
-  color: #00DFB9;
+  border: none ;
+  color: #FFF ;
   display: inline-block ; 
+  font-size: 15pt ;
 }

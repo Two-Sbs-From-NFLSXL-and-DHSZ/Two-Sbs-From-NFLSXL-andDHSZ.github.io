@@ -26,12 +26,12 @@ function translate_fan ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
 
-	titd.innerHTML = "<div class = 'chn' > 距離2020 AP考試: </div>" ;
-	mmd.innerHTML = "<div class = 'chn' > 月 </div>" ;
-	dayd.innerHTML = "<div class = 'chn' > 天 </div>" ;
-	hd.innerHTML = "<div class = 'chn' > 時 </div>" ;
-	mind.innerHTML = "<div class = 'chn' > 分 </div>" ;
-	sd.innerHTML = "<div class = 'chn' > 秒 </div>" ;
+	titd.innerHTML = "距離2020 AP考試:>" ;
+	mmd.innerHTML = "月>" ;
+	dayd.innerHTML = "天>" ;
+	hd.innerHTML = "時>" ;
+	mind.innerHTML = "分>" ;
+	sd.innerHTML = "秒>" ;
 
 	fir.innerHTML = "<th class = 'chn' > 考試科目 </th> <th class = 'chn' > 考試時間 </th> <th class = 'chn' > 距考試開始時間 </th>" ;
 

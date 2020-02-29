@@ -26,13 +26,13 @@ function translate_jyut ()
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
-	pd.innerHTML = "<div class = 'chn' > 唔會呢條題？嚟搵下題目嘅答案! </div>" ;
-	et.innerHTML = "<div class = 'chn' > 試驗 </div>" ;
-	ed.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 呢度提供嘅線上實驗室幫助學生喺冇辦法做線下試驗時亦可以喺網上完成各種各樣啲物理同埋化學嘅試驗，幫助佢哋順利通過有關啲試驗測試。 </div>" ;
-	it.innerHTML = "<div class = 'chn' > 信息 </div>" ;
-	id.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 呢個網站提供關於A-level，AP，SAT同ACT嘅備考資料，包括考試時間表，官方指南，考試須知，同考試變化，幫助考生喺考試前掌握所需啲資料並做好準備。 </div>" ;
-	st.innerHTML = "<div class = 'chn' > 日程 </div>" ;
-	sd.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 呢度仲有精心爲考生準備嘅考試日程表，包括註冊考試截止日同埋考試時間，幫助佢哋計畫日程並合理安排時間準備考試。 </div>" 
+	pd.innerHTML = "唔會呢條題？嚟搵下題目嘅答案!" ;
+	et.innerHTML = "試驗" ;
+	ed.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢度提供嘅線上實驗室幫助學生喺冇辦法做線下試驗時亦可以喺網上完成各種各樣啲物理同埋化學嘅試驗，幫助佢哋順利通過有關啲試驗測試。" ;
+	it.innerHTML = "信息" ;
+	id.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢個網站提供關於A-level，AP，SAT同ACT嘅備考資料，包括考試時間表，官方指南，考試須知，同考試變化，幫助考生喺考試前掌握所需啲資料並做好準備。" ;
+	st.innerHTML = "日程" ;
+	sd.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 呢度仲有精心爲考生準備嘅考試日程表，包括註冊考試截止日同埋考試時間，幫助佢哋計畫日程並合理安排時間準備考試。" 
 	ft.innerHTML = "語言：" ;
 
 

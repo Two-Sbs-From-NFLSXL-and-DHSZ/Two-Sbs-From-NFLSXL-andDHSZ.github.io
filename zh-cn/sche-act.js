@@ -25,12 +25,12 @@ function translate_zh ()
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "关于" ;
 
-	titd.innerHTML = "<div class = 'chn' > 下一场ACT考试: </div>" ;
-	mmd.innerHTML = "<div class = 'chn' > 月 </div>" ;
-	dayd.innerHTML = "<div class = 'chn' > 天 </div>" ;
-	hd.innerHTML = "<div class = 'chn' > 小时 </div>" ;
-	mind.innerHTML = "<div class = 'chn' > 分钟 </div>" ;
-	sd.innerHTML = "<div class = 'chn' > 秒 </div>" ;
+	titd.innerHTML = "下一场ACT考试:" ;
+	mmd.innerHTML = "月" ;
+	dayd.innerHTML = "天" ;
+	hd.innerHTML = "小时" ;
+	mind.innerHTML = "分钟" ;
+	sd.innerHTML = "秒" ;
 
 	ft.innerHTML = "语言：" ;
 

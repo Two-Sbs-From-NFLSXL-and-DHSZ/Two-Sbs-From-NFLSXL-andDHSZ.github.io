@@ -24,12 +24,12 @@ function translate_fan ()
 	ni.innerHTML = "信息" ;
 	ns.innerHTML = "日程" ;
 	na.innerHTML = "關於" ;
-	at.innerHTML = "<div class = 'chn' > 關於網站 </div>" ;
-	ad.innerHTML = "<div class = 'chn' > &nbsp;&nbsp;&nbsp;&nbsp; 這個網站是由Martin Zhou和David Fu擁有並設計的。本網站基於GitHub Pages開發。我們設計這個網站的主要目的是為了幫助國際高中學生在如A-level、AP和SAT等的國際考試中取得理想的成績。本網站主要提供在線搜題的功能，此功能可以幫助學生解決在複習考試過程中遇到的難題。此外，我們也提供線上練習和線上試驗的功能來幫助學生取得更好的成績。希望您能夠享受瀏覽此網站。 </div>" ;
-	adt.innerHTML = "<div class = 'chn' > 關於開發者 </div>" ;
-	add.innerHTML = "<div class = 'chn' > 暫無內容 </div>" ;
-	ct.innerHTML = "<div class = 'chn' > 聯繫我們 </div>" ;
-	cd.innerHTML = "<div class = 'chn' > 暫無內容 </div>" ;
+	at.innerHTML = "關於網站" ;
+	ad.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; 這個網站是由Martin Zhou和David Fu擁有並設計的。本網站基於GitHub Pages開發。我們設計這個網站的主要目的是為了幫助國際高中學生在如A-level、AP和SAT等的國際考試中取得理想的成績。本網站主要提供在線搜題的功能，此功能可以幫助學生解決在複習考試過程中遇到的難題。此外，我們也提供線上練習和線上試驗的功能來幫助學生取得更好的成績。希望您能夠享受瀏覽此網站。" ;
+	adt.innerHTML = "關於開發者" ;
+	add.innerHTML = "暫無內容" ;
+	ct.innerHTML = "聯繫我們" ;
+	cd.innerHTML = "暫無內容" ;
 	ft.innerHTML = "語言：" ;
 
 	document.cookie = "lang = zh-fan; expires=Fri, 31 Dec 9999 23:59:59 GMT" ;
