@@ -31,6 +31,7 @@
 	margin: 100px 20px ;
 	opacity: 0 ;
 	position: relative ;
+	transition: filter 1s ease-in-out ;
 }
 
 .exp img , .sche img
@@ -45,6 +46,11 @@
 	margin-right: 100px ;
 	width: 500px ;
 	z-index: 1 ;
+}
+
+.exp:hover , .sche:hover , .info:hover
+{
+	filter : opacity( 0.75 );
 }
 
 #exp , #sche
@@ -81,7 +87,7 @@
 	}
 	to
 	{
-		opacity: 100 ;
+		opacity: 1 ;
 	}
 }
 

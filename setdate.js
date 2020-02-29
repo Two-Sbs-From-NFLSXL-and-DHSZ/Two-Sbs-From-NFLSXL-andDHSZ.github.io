@@ -44,8 +44,8 @@ function ctt ()
 
 	for ( var i = 1 ; i <= md [ mm ] ; i++ )
 	{
-		if ( cd <= i ) str += `<th style = "color: #4169E1" > ${ i } </th>` ;
-		else str += `<th style = "color: #B0C4DE" > ${ i } </th>` ;
+		if ( cd <= i ) str += `<th style = "color: #00DFB9" > ${ i } </th>` ;
+		else str += `<th style = "color: #7FFFD4" > ${ i } </th>` ;
 
 		count++ ;
 

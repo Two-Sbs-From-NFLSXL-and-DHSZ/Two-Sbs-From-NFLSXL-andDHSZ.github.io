@@ -10,6 +10,6 @@ window.onscroll = function ()
 		{
 			console.log ( idlist [ i ].style.top )
 			idlist [ i ].style.animation = "fadein 0.5s ease-in" ;
-			idlist [ i ].style.opacity = 100 ;
+			idlist [ i ].style.opacity = 1 ;
 		}
 }

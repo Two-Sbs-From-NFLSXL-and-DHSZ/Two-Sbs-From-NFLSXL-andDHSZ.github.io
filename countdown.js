@@ -65,7 +65,7 @@ function countdown ()
 
 		if ( d < 0 ) d = 0 ;
 
-		document.write ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #4695ED' > <p> <span ` ) ;
+		document.write ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #00DFB9' > <p> <span ` ) ;
 
 		if ( d <= 10 ) 
 			document.write ( "class = 'red' > " ) ;
