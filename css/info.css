@@ -1,0 +1,37 @@
+.infopage
+{
+	margin: 20px ;
+}
+
+.info
+{
+	background-color: #FFF ;
+	border: solid #F5F5F5 ;
+	font-size: 15pt ;
+	margin: 20px 50px ;
+	padding: 20px ;
+	transition: filter .3s ease-in;
+	text-align: center ;
+}
+
+.info:hover 
+{
+	filter: drop-shadow(5px 3px 7px #888)
+}
+
+.info h2, p
+{
+	text-align: left ;
+}
+
+button
+{
+	background-color: #FEDB00 ;
+	border: none ;
+	color: #000 ;
+	margin: 20px ;
+	padding: 10px 20px 10px 20px ;
+	text-align: center ;
+	text-decoration: none ;
+	text-transform: uppercase ;
+}

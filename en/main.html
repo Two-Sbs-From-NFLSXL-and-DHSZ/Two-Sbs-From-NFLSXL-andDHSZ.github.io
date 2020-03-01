@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang = "en" >
+
+<head>
+    <title> Home </title>
+
+    <script type = "text/javascript" src = "../js/nav.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../js/set_cookie.js" >
+    </script>
+
+    <link rel = 'shortcut icon' href = '../repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = '../css/general.css' >
+    <link rel = 'stylesheet' type = 'text/css' href = '../css/main.css' >
+</head>
+
+<body>
+	<script type = "text/javascript">
+        nav ( 0 ) ;
+        set_cookie ( 'en' ) ;
+    </script>  
+
+    <a href = "search.html" >
+        <div class = "photo" >
+            <div class = "typing" >
+                Find out the answers to your problems!
+            </div>
+        </div>
+    </a>
+
+    <div class = "model" >
+        <a class = "exp" href = "experiment.html" >
+            <img src = "../repository/main-exp.jpg" >
+
+            <div id = "exp" >
+                <h2> Experiment </h2>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp; Cannot do experiments at your school's lab? Don't worry. In our website, there are online experiments of both physics and chemistry! If you find your experiments too dangerous to do in reality, or if you cannot find necessary equipment for the experiment, come and have your experiments virtually at our website! You will enjoy this experience! </br> &nbsp; </p>
+            </div>
+        </a>
+
+        <a class = "info" href = "info.html" align = "right" >
+            <img src = "../repository/main-info.jpg" >
+
+            <div id = "info" >
+                <h2> Information </h2>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp; Thinking about that cannot find in-time and useful information about your coming tests? Come to our website! We provide you with accurate and recent information about A-level, AP, SAT and ACT. All you want to know, including the timetable of your coming tests, requirements and suggestions from official, as well as changes from tests of last year, are presented here. What are you waiting for? </p>
+            </div>
+        </a>
+
+        <a class = "sche" href = "schedule.html" >
+            <img src = "../repository/main-sche.jpg" >
+
+            <div id = "sche" >
+                <h2> Schedule </h2>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp; Finding that your timeline is messy? Never mind. We have timetable, marking the time for each exams you need to take. This is the best way to schedule your review plan! </p>
+            </div>
+        </a>
+    </div>
+
+    <script type = "text/javascript" src = "../js/main-in.js" >
+    </script>
+</body>
+
+<footer>
+    <script type = "text/javascript" src = "../js/foot.js" >
+    </script>
+
+    <p id = "foot"> Language: </p>
+
+    <select onchange = 'location.href = this.options [ this.selectedIndex ].value' id = "lang" >
+        <option value = "" selected = "selected" > English </option>
+        <option value = "../zh-cn/main.html" > 中文简体 </option>
+        <option value = "../zh-jyut/main.html" > 中文繁體(中國香港及澳門) </option>
+        <option value = "../zh-fan/main.html" > 中文繁體(中國臺灣) </option>  
+    </select> 
+</footer>
+
+</html>

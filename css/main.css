@@ -1,0 +1,118 @@
+.photo
+{
+	background-color: #000 ;
+	background-image: url( "../repository/preface.jpg" ) ;
+	background-size: 100% ;
+	padding: 400px 100px 150px 100px ;
+	text-align: center ;
+}
+
+.typing
+{
+	animation: type-a 1s infinite , type-b 4s steps( 32 ) ; 
+	border-right: solid 5px #00DFB9 ;
+	color: #FFF ;
+	font-size: 50px ;
+	overflow: hidden ;
+	text-decoration: none ;
+	white-space: nowrap ;
+	width: 34ch ;
+}
+
+.model
+{
+	margin-top: 100px ;
+	position: relative ;
+}
+
+.exp , .info , .sche
+{
+	display: block ;
+	margin: 100px 20px ;
+	opacity: 0 ;
+	position: relative ;
+	transition: filter 1s ease-in-out ;
+}
+
+.exp img , .sche img
+{
+	margin-left: 100px ;
+	width: 500px ;
+	z-index: 1 ;
+}
+
+.info img
+{
+	margin-right: 100px ;
+	width: 500px ;
+	z-index: 1 ;
+}
+
+.exp:hover , .sche:hover , .info:hover
+{
+	filter : opacity( 0.75 );
+}
+
+#exp , #sche
+{
+	background-image: url( "../repository/home-back.png" ) ;
+	color: #000 ;
+	font-size: 20px ;
+	left: 300px ;
+	padding: 20px ;
+	position: absolute ;
+	top: 100px ;
+	width: 1000px ;
+	z-index: 2 ;
+}
+
+#info
+{
+	background-image: url( "../repository/home-back.png" ) ;
+	color: #000 ;
+	font-size: 20px ;
+	padding: 20px ;
+	position: absolute ;
+	right: 300px ;
+	top: 100px ;
+	width: 1000px ;
+	z-index: 2 ;
+}
+
+@keyframes fadein
+{
+	from
+	{
+		opacity: 0 ;
+	}
+	to
+	{
+		opacity: 1 ;
+	}
+}
+
+@keyframes type-a
+{
+	0%
+	{
+		border-color: transparent ;
+	}
+
+	50%
+	{
+		border-color: #00DFB9 ;
+	}
+
+	100%
+	{
+		border-color: transparent ;
+	}
+}
+
+@keyframes type-b
+{
+	from 
+	{
+		width: 0 ;
+	}
+}
