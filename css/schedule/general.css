@@ -1,0 +1,159 @@
+*
+{
+  font-family: 华文细黑 ;
+  margin: 0 ; 
+  padding: 0 ;
+}
+
+.cancel , .end
+{
+  color: #A9A9A9 ;
+}
+
+.score , .ongoing
+{
+  color: #00FF00 ;
+}
+
+.reg-end , .urgent
+{
+  color: #FF0000 ;
+}
+
+.ava
+{
+  color: #1E90FF ;
+}
+
+a 
+{
+  text-decoration: none ;
+}
+
+#header
+{
+  display: inline ;
+}
+
+#header img
+{
+  height: auto ;
+  margin: 20px 0 0 0 ;
+  width: 500px ;
+}
+
+#Navigation 
+{
+	background-color: #FFF ;
+  display: inline ;
+}
+
+.Navi
+{
+  color: #000 ;
+  display: inline-block ;
+  font-size: 16px ;
+  font-weight: 1000 ;
+  height: 20px;
+  margin: 15px auto ;
+  padding: 0 20px ;
+  text-align: center ;
+  text-decoration: none ;
+  text-transform: uppercase ;
+  transition: color ease-in 0.5s ;
+  width: 100px ;
+}
+
+.Navi:hover 
+{
+  color: #00DFB9 ;
+}
+
+.hovered
+{
+  color: #00DFB9 ;
+}
+
+.big-countdown
+{
+  text-align: center ;
+}
+
+#c-title h2 , #c-title p
+{
+  display: inline-block ; 
+  font-size: 30pt ;
+  font-weight: 700 ;
+  margin: 50px 0 20px 0;
+}
+
+.countdown div
+{
+  display: inline-block ;
+  font-size: 30pt ;
+  margin: 50px ;
+}
+
+.countdown p 
+{
+  font-size: 50pt ;
+  text-align: center ;
+}
+
+table th
+{
+  font-size: 15pt ;
+  margin: 20px ;
+  padding: 20px 50px ;
+  text-align: center ;
+}
+
+#first-line th
+{
+  font-size: 25pt ;
+}
+
+footer 
+{
+  background-color: #000 ;
+  position: relative ;
+  top: 0px ;
+}
+
+.foot-nav
+{
+  text-align: center ;
+}
+
+.foot-nav a
+{
+  color: #FFF ;
+  text-decoration: none ;
+}
+
+.foot-nav a:hover
+{
+  color: #00DFB9 ;
+}
+
+.foot-nav div
+{
+  display: inline-block ;
+  margin: 100px 50px ;
+}
+
+footer p
+{
+  color: #FFF ;
+  display: inline-block ; 
+  padding: 20px ;
+}
+
+footer select
+{
+  background-color: #000 ;
+  border: none ;
+  color: #FFF ;
+  display: inline-block ; 
+  height: 20px ;
+}

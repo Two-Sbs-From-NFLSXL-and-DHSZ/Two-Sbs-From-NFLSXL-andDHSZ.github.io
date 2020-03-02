@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang = "en" >
+
+<head>
+    <title> AP - Schedule </title>
+
+    <script type = "text/javascript" src = "../../js/general/nav.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../../js/set_cookie.js" >
+    </script>
+
+    <link rel = 'shortcut icon' href = '../../repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = '../../css/schedule/general.css' >
+</head>
+
+<body> 
+    <script type = "text/javascript">
+        nav () ;
+        set_cookie ( 'en' ) ;
+    </script>
+
+    <div class = "big-countdown" > 
+        <div id = "c-title" > 
+            <h2> 
+                Before 2020 AP Exams: 
+            </h2>
+
+            <p id = "number" >
+            </p>
+        </div>
+
+        <div class = "countdown" >
+            <div class = "month" >
+                <h4> Month </h4>
+
+                <p id = "month" > </p>
+            </div>
+
+            <div class = "day" >
+                <h4> Day </h4>
+
+                <p id = "day" > </p>
+            </div>
+
+            <div class = "hour" >
+                <h4> Hour </h4>
+
+                <p id = "hour" > </p>
+            </div>
+
+            <div class = "minute" >
+                <h4> Minute </h4>
+
+                <p id = "minute" > </p>
+            </div>
+
+            <div class = "second" >
+                <h4> Second </h4>
+
+                <p id = "second" > </p>
+            </div>
+        </div>
+    </div>
+
+    <script type = "text/javascript" src = "../../js/schedule/countdown.js" >
+    </script>
+
+    <div align = "middle" >
+        <table align = "middle" >
+            <thead id = "first-line" >
+                <tr>
+                    <th> Test Subject </th>
+                    <th> Test Time </th>
+                    <th> Time before Test </th>
+                </tr>
+            </thead>
+
+            <tbody id = "status" >
+            </tbody>
+        </table>
+    </div>
+    
+    <script type = "text/javascript" src = "../../js/schedule/ap.js" > 
+    </script>
+
+    <script type = "text/javascript" >
+        window.onload = function ()
+        {
+            setInterval ( 'countdownap ()' , 1000 ) ;
+            setInterval ( 'ap_status ()' , 1000 ) ;
+        }
+    </script>
+</body>
+
+<footer>
+    <script type = "text/javascript" src = "../../js/general/foot.js" >
+    </script>
+
+    <p id = "foot"> Language: </p>
+
+    <select onchange = 'location.href = this.options [ this.selectedIndex ].value' id = "lang" >
+        <option value = "" selected = "selected" > English </option>
+        <option value = "../../zh-cn/schedule/ap.html" > 中文简体 </option>
+        <option value = "../../zh-jyut/schedule/ap" > 中文繁體(中國香港及澳門) </option>
+        <option value = "../../zh-fan/schedule/ap" > 中文繁體(中國臺灣) </option>  
+    </select> 
+</footer>
+
+</html>
