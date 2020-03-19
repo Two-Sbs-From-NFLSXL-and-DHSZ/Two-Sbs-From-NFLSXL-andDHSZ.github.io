@@ -4,7 +4,7 @@ function nav ( ind )
     document.write ( "<a href = 'main.html'> <img src = '../repository/title.jpg' > </a> " ) ;
     document.write ( "</div>" ) ;
 
-    document.write ( "<nav id = 'Navigation' > " ) ;
+    document.write ( "<nav class = 'Navigation' > " ) ;
     
     document.write ( "<a href = 'search.html' id = 'nav-search' class = 'Navi " ) ;
 

@@ -1,0 +1,19 @@
+.uppernav
+{
+	padding: 20px ;
+	text-align: center ;
+}
+
+.uppernav > a 
+{
+	color: #00DFB9 ;
+	font-size: 15pt ;
+	margin: 0 20px ;
+	padding: 10px ;
+}
+
+.navhover , .uppernav > a:hover
+{
+	background-color: #00DFB9 ;
+	color: #FFF !important;
+}

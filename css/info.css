@@ -16,12 +16,17 @@
 
 .info:hover 
 {
-	filter: drop-shadow(5px 3px 7px #888)
+	filter: drop-shadow( 5px 3px 7px #888 );
 }
 
 .info h2, p
 {
 	text-align: left ;
+}
+
+.info p
+{
+	text-indent: 3ch ;
 }
 
 button

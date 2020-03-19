@@ -8,7 +8,7 @@ window.onscroll = function ()
 	for ( i = 0 ; i < idlist.length ; i++ )
 		if ( document.documentElement.scrollTop > ( idlist [ i ].offsetTop + document.querySelector ( ".model").offsetTop - idlist [ i ].offsetHeight ) )
 		{
-			idlist [ i ].style.animation = "fadein 0.5s ease-in" ;
+			idlist [ i ].style.animation = "fade-in 0.5s ease-in" ;
 			idlist [ i ].style.opacity = 1 ;
 		}
 }

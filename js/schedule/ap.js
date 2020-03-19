@@ -180,6 +180,13 @@ function ap_status ()
 
 		str += `<th> ${ parseInt ( ap [ i ].time / 10000 ) }/${ parseInt ( ap [ i ].time % 10000 / 100 ) } ${ ap [ i ].time % 100 }:00 </th> ` ;
 
+		str += `<th> ${ parseInt ( ap [ i ].len / 100 ) }:` ;
+
+		if ( ap [ i ].len % 100 < 10 )
+			str += "0" ;
+
+		str += `${ ap [ i ].len % 100 } </th>` ;
+
 		var temp = dif ( ap [ i ].time ) ;
 
 		var imm = parseInt ( temp.substr ( 0 , 2 ) ) ;

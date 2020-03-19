@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+
+<html lang = "en" >
+
+<head>
+    <title> AP - Information </title>
+
+    <script type = "text/javascript" src = "../../js/general/nav.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../../js/set_cookie.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../../js/info/event.js" > 
+    </script>
+
+    <link rel = 'shortcut icon' href = '../../repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = '../../css/general.css' >
+    <link rel = 'stylesheet' type = 'text/css' href = '../../css/info/general.css' >
+</head>
+
+<body>
+    <script type = "text/javascript">
+        nav ( 3 ) ;
+        set_cookie ( 'en' ) ;
+    </script>
+
+    <div class = "title" >
+        <img src = "../../repository/info/logo/cb.svg" style = "background-color: #0077C8" >
+
+        <h2> AP </h2>
+    </div>
+
+    <div class = "intro" >
+        <nav class = "leftnav" >
+            <a href = "javascript: ;" onclick = "f ( 'duration' ) ;" >
+                Duration
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'subject' ) ;" >
+                Subjects of the Test
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'score' ) ;" >
+                Score
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'college' ) ;" >
+                Recommend Score 
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'time' ) ;" >
+                Test Time and Test Center
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'reg' ) ;" >
+                Register
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'req' ) ;">
+                Requirements and Advice
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'new' ) ;" >
+                Recent News
+            </a>
+
+            <a href = "javascript: ;" onclick = "f ( 'more' ) ;" >
+                Learn More
+            </a>
+        </nav>
+
+        <div id = "duration" >
+            <h4> Duration </h4>
+
+            <p style = "display: grid" > Each subject of AP tests has a different duration. The duration of some popular subjects are listed below:
+                <ul>
+                    <li> Calculus AB: 3h 15m </li>
+                    <li> Calculus BC: 3h 15m </li>
+                    <li> Microeconomics: 2h 10m </li>
+                    <li> Macroeconomics: 2h 10m </li>
+                    <li> Physics 1: Algebra-Based: 3h </li>
+                    <li> United States History: 3h 15m </li>
+                    <li> Statistics: 3h </li>
+                </ul>
+
+                To find out the duration about more subject, please click
+
+                <a href = "../schedule/ap.html" class = "underlined" >
+                    here
+                </a>
+                .
+            </p>
+        </div>
+
+        <div id = "subject" >
+            <h4> Subjects of Test </h4>
+
+            <p>
+                AP exam contains more than 30 subjects, including subjects in literature, science, social science and humanity. Some popular AP subjects are United States History, Calculus, World History, Statistics and English Language and Composition. To find out more about subjects of AP test, visit 
+
+                <a href = "https://apstudents.collegeboard.org/" class = "underlined" >
+                    AP Offical Site 
+                </a>
+                .
+            </p>
+        </div>
+
+        <div id = "score" >
+            <h4> Score </h4>
+
+            <p style = "display: grid;" >
+                The score of AP tests is divided into 5 grades: 
+                <span> 5: Extremely well qualified </span>
+                <span> 4: Very well qualified </span>
+                <span> 3: Qualified </span>
+                <span> 2: Possibly qualified </span>
+                <span> 1: No recommendation </span>
+            </p>
+
+            <p>
+                The score of students would be transformed into the table above based on the average scoring of students taking the subject and the number of students taking the exam. Different subjects might have a totally different scoring system.
+            </p>
+        </div> 
+
+        <div id = "college" >
+            <h4> Recommend Score </h4>
+
+            <p> Usually, a AP score of 4 or 5 is useful when applying for American colleges as well as exchanging course credits as students enter the college. If a score of lower than 4 is received, it is highly unrecommended to report the score to the colleges that you want to apply for. To apply for some top colleges and universities, a student should have at least 3 to 4 usable AP scores. </p>
+        </div>
+
+        <div id = "time" >
+            <h4> Test Time and Test Center </h4>
+
+            <p> AP exams begin from the first Monday of May annually, and last for 2 weeks. Your test center for AP tests are associated with your school. To find out specfic test time for each subject you have registered, please click
+
+                <a href = "../schedule/ap.html" class = "underlined" >
+                    here
+                </a>
+                .
+            </p>
+        </div>
+
+        <div id = "reg" style = "height: 640px" >
+            <h4> Register </h4>
+
+            <div class = "roll-img" >
+                <div id = "r1" >
+                    <img src = "" >
+
+                    <p> </p>
+                </div>
+
+                <a href = "javascript:;" id = "left-button" onclick = "roll ( 1 , -1 ) ;" >
+                </a>
+
+                <a href = "javascript:;" id = "right-button" onclick = "roll ( 1 , 0 ) ;" >
+                </a>
+            </div>
+
+            <div class = "indicator" >
+                <a href = "javascript:;" class = "dot" id = "i1" onclick = "roll ( 1 , 1 )" >
+                    ●
+                </a>
+            </div>
+
+            <script type = "text/javascript" src = "../../js/info/roll.js" >
+            </script>
+        </div>
+
+        <div id = "req" >
+            <h4> Requirements and Advice </h4>
+
+            <p>
+                On test day, you should bring:
+
+                <ul>
+                    <li>
+                        A calculator if required. Check
+
+                        <a href = "https://apstudents.collegeboard.org/exam-policies-guidelines/calculator-policies" class = "underlined" >
+                            Calculator Policies
+                        </a>
+
+                        here.
+                    </li> 
+
+                    <li> No. 2 pencils with erasers. </li>
+                    <li> Pens with black or dark-blue ink. </li>
+                    <li> Your student ID. </li>
+                </ul>
+            </p>
+
+            <p> 
+                You are suggested to bring:
+
+                <ul> 
+                    <li> A watch to keep up with time. </li>
+                    <li> A ruler for drafting. </li>
+                </ul>
+            </p>
+        </div>
+
+        <div id = "new" >
+            <h4> Recent News </h4>
+
+            <ul>
+                <li> College Board has announced not to hold AP US History and World History exams in China mainland in 2020. </li>
+            </ul>
+        </div>
+
+        <div id = "more" >
+            <h4> Learn more </h4>
+
+            <p> For more information about AP and College Board, visit
+
+                <a href = "https://apstudents.collegeboard.org/" class = "underlined" >
+                    AP Official Site
+                </a>
+
+                and
+
+                <a href = "https://apstudents.collegeboard.org/ap/2019-10/ap-student-parent-bulletin-2019-20.pdf" style = "color: #000; text-decoration: underline" > 
+                    Official Bulletin
+                </a>
+
+                .
+            </p>
+        </div>
+    </div>
+</body>
+
+<footer class = "footer" >
+    <script type = "text/javascript" src = "../../js/general/foot.js" >
+    </script>
+
+    <p id = "foot"> Language: </p>
+
+    <select onchange = 'location.href = this.options [ this.selectedIndex ].value' id = "lang" >
+        <option value = "" selected = "selected" > English </option>
+        <option value = "../../zh-cn/info/ap.html" > 中文简体 </option>
+        <option value = "../../zh-jyut/info/ap.html" > 中文繁體(中國香港及澳門) </option>
+        <option value = "../../zh-fan/info/ap.html" > 中文繁體(中國臺灣) </option>  
+    </select> 
+</footer>

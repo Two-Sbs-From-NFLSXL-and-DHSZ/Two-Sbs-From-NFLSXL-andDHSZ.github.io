@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<html lang = "en" >
+
+<head>
+    <title> A-level - Information </title>
+
+    <script type = "text/javascript" src = "../../js/general/nav.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../../js/set_cookie.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../../js/info/event.js" > 
+    </script>
+
+    <link rel = 'shortcut icon' href = '../../repository/favicon.ico' >
+    <link rel = 'stylesheet' type = 'text/css' href = '../../css/general.css' >
+    <link rel = 'stylesheet' type = 'text/css' href = '../../css/info/alevel.css' >
+    <link rel = 'stylesheet' type = 'text/css' href = '../../css/info/general.css' >
+</head>
+
+<body>
+    <script type = "text/javascript">
+        nav ( 3 ) ;
+        set_cookie ( 'en' ) ;
+    </script>
+
+    <nav class = "uppernav" >
+        <a href = "a-level.html" id = "home" >
+            A-level
+        </a>
+
+        <a href = "a-level-edexcel.html" id = "edexcel" >
+            Edexcel
+        </a>
+
+        <a href = "a-level-ocr.html" id = "ocr" >
+            OCR
+        </a>
+
+        <a href = "a-level-aqa.html" id = "aqa" >
+            AQA
+        </a>
+
+        <a href = "a-level-wjec.html" id = "wjec" >
+            WJEC
+        </a>
+
+        <a href = "a-level-ccea.html" id = "ccea" >
+            CCEA
+        </a>
+
+        <a href = "a-level-cie.html" id = "cie" class = "navhover" >
+            CIE
+        </a>
+    </nav>
+
+    <div class = "title" >
+        <img src = "../../repository/info/logo/cie.svg" >
+
+        <h2> CIE </h2>
+    </div>
+
+    <div class = "intro" >
+        <nav class = "leftnav" >
+            <a href = "javascript:;" onclick = "f ( 'organ' ) " >
+                Introduction
+            </a>
+
+            <a href = "javascript:;" onclick = "f ( 'subject' ) " >
+                Subjects
+            </a>
+
+            <a href = "javascript:;" onclick = "f ( 'time' ) " >
+                Test Time
+            </a>
+
+            <a href = "javascript:;" onclick = "f ( 'reg' ) " >
+                Register
+            </a>
+
+            <a href = "javascript:;" onclick = "f ( 'more' ) " >
+                Learn More
+            </a>
+        </nav>
+
+        <div id = "organ" >
+            <h4> Introduction </h4>
+
+            <p> 
+                Cambridge International Examinations is a British examination belonging to the University of Cambridge. As the provider of international qualifications, CIE provides qualifications and exams to more than 160 countries all around the world. CIE A-level is only provided for students outside Britain.
+            </p>
+        </div>
+
+        <div id = "subject" >
+            <h4> Subjects </h4>
+
+            <p> CIE A-level provides students with subjects like Biology, Chemistry, Economics, Mathematics, Physics, Siciology and so on. Click
+                <a href = "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/subjects/" class = "underlined" >
+                    here
+                </a>
+
+                to find out more subjects of CIE.
+            </p>
+        </div>
+
+        <div id = "time" >
+            <h4> Test Time </h4>
+
+            <p> The CIE A-level test will be hold in April till June this year. Click 
+                <a href = "https://www.cambridgeinternational.org/exam-administration/cambridge-exams-officers-guide/phase-1-preparation/timetabling-exams/exam-timetables/" class = "underlined" >
+                    here
+                </a>
+
+                to find out the specific timetable for CIE A-level exams in 2020.
+            </p>
+        </div>
+
+        <div id = "reg" >
+            <h4> Register </h4>
+
+            <p> </p>
+        </div>
+
+        <div id = "more" >
+            <h4> Learn More </h4>
+
+            <p> For more information about CIE A-level, visit 
+                <a href = "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/" class = "underlined" >
+                    CIE Official Site
+                </a>
+                .
+            </p>
+        </div>
+    </div>
+</body>
+
+<footer class = "footer" >
+    <script type = "text/javascript" src = "../../js/general/foot.js" >
+    </script>
+
+    <p id = "foot"> Language: </p>
+
+    <select onchange = 'location.href = this.options [ this.selectedIndex ].value' id = "lang" >
+        <option value = "" selected = "selected" > English </option>
+        <option value = "../../zh-cn/info/a-level-cie.html" > 中文简体 </option>
+        <option value = "../../zh-jyut/info/a-level-cie.html" > 中文繁體(中國香港及澳門) </option>
+        <option value = "../../zh-fan/info/a-level-cie.html" > 中文繁體(中國臺灣) </option>  
+    </select> 
+</footer>

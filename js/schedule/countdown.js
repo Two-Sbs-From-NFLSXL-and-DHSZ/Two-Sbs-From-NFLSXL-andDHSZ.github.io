@@ -322,7 +322,7 @@ function countdownalevel ()
 
 function countdownsat ()
 {
-	var sat = [ 314 , 502 , 606 , 829 , 1003 , 1107 , 1205 ] ;
+	var sat = [ 314 , 606 , 829 , 1003 , 1107 , 1205 ] ;
 
 	var t = new Date () ;
 

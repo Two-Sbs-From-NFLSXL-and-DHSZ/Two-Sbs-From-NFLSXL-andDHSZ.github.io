@@ -1,0 +1,182 @@
+.title
+{
+  text-align: center ;
+}
+
+.title h2 
+{
+  display: inline-block ;
+  font-size: 38pt ;
+  margin-left: 20px ;
+}
+
+.title img , svg
+{
+  display: inline-block ;
+  height: 40px ;
+  margin-right: 20px ;
+}
+
+.intro
+{
+  font-size: 15pt ;
+  margin: 0 100px ;
+  position: relative ;
+}
+
+.intro > div
+{
+  border-top: 1px solid #00DFB9 ;
+  margin: 20px ;
+  margin-left: 300px ;
+  padding: 20px ;
+  position: relative ;
+}
+
+.intro h4
+{
+  font-size: 17pt ;
+  font-weight: 1000 ;
+}
+
+.intro p
+{
+  font-size: 15pt ;
+  text-indent: 2ch ;
+}
+
+.intro ul
+{
+  margin-left: 20px ;
+}
+
+.underlined
+{
+  color: #000 ; 
+  text-decoration: underline ;
+}
+
+.lined
+{
+  color: #000 ;
+  text-decoration: none ;
+}
+
+.lined:hover
+{
+  text-decoration: underline ;
+}
+
+li:before
+{
+  content: "■" ;
+  color: #00DFB9 ;
+}
+
+.small-dot > li:before
+{
+  content: "■" ;
+  color: #00DFB9 ;
+  font-size: 10pt ;
+}
+
+li
+{
+  list-style: none ;
+}
+
+.leftnav
+{
+  position: fixed ;
+}
+
+.leftnav a
+{
+  background-color: #FFF ;
+  border: none ;
+  color: #00DFB9 ;
+  display: grid ;
+  font-size: 15pt ;
+  margin: 0 ;
+  padding: 10px 0px 10px 20px ;
+  text-decoration: none ;
+  transition: all .5s ;
+}
+
+.leftnav a:hover
+{
+  background-color: #F5F5F5 ;
+  border-left: 5px solid #00DFB9;
+  color: #00DFB9 ;
+  text-decoration: none ;
+}
+
+.roll-img
+{
+  position: relative ;
+}
+
+.roll-img > div
+{
+  opacity: 0 ;
+  position: absolute ;
+  top: 20px ;
+}
+
+.roll-img img
+{
+  height: 540px ;
+  width: 960px ;
+  z-index: 1 ;
+}
+
+.roll-img p
+{
+  padding: 20px ;
+}
+
+#r1 
+{
+  opacity: 1 ;
+}
+
+#left-button , #right-button
+{
+  background: no-repeat 50% / 100% 100% ;
+  border: none ;
+  height: 20px ;
+  position: absolute ;
+  top: 270px ;
+  width: 20px ;
+}
+
+#left-button
+{
+  background-image: url( "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e" ) ;
+  left: 20px ;
+}
+
+#right-button
+{
+  background-image: url( "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e" ) ;
+  right: 20px ;
+}
+
+.dot
+{
+  color: #FFF ;
+  opacity: .5 ;
+}
+
+.indicator
+{
+  left: 50% ;
+  position: absolute;
+  top: 560px ;
+  z-index: 10 ;
+}
+
+#i1
+{
+  opacity: .75 ;
+}
