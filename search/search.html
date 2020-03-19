@@ -3,29 +3,43 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-
+    <meta content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0,
+                                     user-scalable=no" name="viewport">
     <!-- Bootstrap CSS -->
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <link crossorigin="anonymous" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Find your answers!</title>
 </head>
 <body>
-<div id="outerDiv">
-    <div id="innerDiv1">
-        <input accept="image/*" class="form-control" id="uploadImage" multiple="true"
-               name="image" onchange="uploadImageToInput()" type="file">
+<div id="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Find out the answers!</h2>
+        </div>
+        <div class="col-sm-4">
+            <input id="searchInput" placeholder="Input your problem" type="text">
+            <button id="searchButton">Search</button>
+        </div>
+
+
     </div>
-    <div id="innerDiv2">
-        <img id="viewImg" src="">
+    <div class="innerDiv2">
+<span>
+            <input accept="image/*" class="form-control" id="uploadImage" multiple="true"
+                   name="image" onchange="uploadImageToInput()" type="file">
+        </span>
     </div>
-    <div id="innerDiv3">
+    <div class="innerDiv3">
+        <img alt="To be uploaded..." class="img-responsive" id="viewImg" src="">
+    </div>
+    <div class="innerDiv4">
         <button onclick="OCRAD(document.getElementById('viewImg'), function(text){
             document.getElementById('image2Text').innerText = text;})">Click to parse the image!
         </button>
     </div>
-    <div id="innerDiv4">
+    <div class="innerDiv5">
         <p id="image2Text">HH</p>
     </div>
 </div>
@@ -33,14 +47,9 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script crossorigin="anonymous"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        src="jquery-3.4.1.min.js"></script>
 <script crossorigin="anonymous"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 <script defer="true" src='ocrad.js' type="text/javascript"></script>
 <script defer="true" src='search.js' type="text/javascript"></script>
 </body>

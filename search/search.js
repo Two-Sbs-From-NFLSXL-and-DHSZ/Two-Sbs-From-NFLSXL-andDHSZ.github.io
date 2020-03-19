@@ -10,7 +10,6 @@ function uploadImageToInput() {
     if (obj_image.size > const_maxSize) {
         compressImage(obj_image, base64ization, function (str) {
             document.getElementById('viewImg').src = str
-            console.log('dakwd')
         })
     } else {
         base64ization(obj_image, function (str) {
