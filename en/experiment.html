@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html lang = "en" >
+
+<head>
+    <title> Experiment ( test ) </title>
+
+    <script type = "text/javascript" src = "../js/nav.js" >
+    </script>
+
+    <script type = "text/javascript" src = "../js/set_cookie.js" >
+    </script>
+
+    <link rel = 'shortcut icon' href = '../repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = '../css/general.css' >
+</head>
+
+<body>
+	<script type = "text/javascript">
+        nav ( 2 ) ;
+        set_cookie ( 'en' ) ;
+    </script>  
+
+    <iframe src = "iframe.html" style = "border: none ; height: 300px ; width: 500px ">
+    </iframe>
+</body>
+
+<footer>
+    <script type = "text/javascript" src = "../js/foot.js" >
+    </script>
+
+    <p id = "foot"> Language: </p>
+
+    <select onchange = 'location.href = this.options [ this.selectedIndex ].value' id = "lang" >
+        <option value = "" selected = "selected" > English </option>
+        <option value = "../zh-cn/experiment.html" > 中文简体 </option>
+        <option value = "../zh-jyut/experiment.html" > 中文繁體(中國香港及澳門) </option>
+        <option value = "../zh-fan/experiment.html" > 中文繁體(中國臺灣) </option>  
+    </select> 
+</footer>
+
+</html>
