@@ -271,7 +271,7 @@ function y_axis ( x ) //Find the y-axis on the sloping table basing on x-axis
 canvas.addEventListener ( "click" , function ( e ) //Mouse-click event
 {
 	var x = e.clientX ; 
-	var y = e.clientY - document.querySelector ( ".gameboard" ).offsetTop ;
+	var y = e.clientY - document.querySelector ( ".gameboard" ).offsetTop + document.documentElement.scrollTop ;
 
 	if ( select > 0 && ( x >= 55 && x <= 240 && Math.abs ( y - y_axis ( x ) ) <= 50 ) ) 
 	{
@@ -284,7 +284,7 @@ canvas.addEventListener ( "click" , function ( e ) //Mouse-click event
 canvas.onmousemove = function ( e )
 {
 	var x = e.clientX ;
-	var y = e.clientY - document.querySelector ( ".gameboard" ).offsetTop ;
+	var y = e.clientY - document.querySelector ( ".gameboard" ).offsetTop + document.documentElement.scrollTop;
 
 	if ( select > 0 && flag && ( x >= 55 && x <= 240 && Math.abs ( y - y_axis ( x ) ) <= 50 ) )
 	{
