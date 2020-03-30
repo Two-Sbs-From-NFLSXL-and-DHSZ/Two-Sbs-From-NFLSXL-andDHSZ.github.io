@@ -1,0 +1,56 @@
+.exppage
+{
+	margin: 20px ;
+	position: relative ;
+}
+
+.exp
+{
+	background-color: #FFF ;
+	border: solid #F5F5F5 ;
+	font-size: 15pt ;
+	margin: 20px 50px ;
+	overflow: hidden ;
+	padding: 20px ;
+	transition: filter .3s ease-in;
+	text-align: center ;
+}
+
+.exp:hover 
+{
+	filter: drop-shadow( 5px 3px 7px #888 );
+}
+
+.exp h2, p
+{
+	text-align: left ;
+}
+
+.exp p
+{
+	text-indent: 3ch ;
+}
+
+button
+{
+	background-color: #FEDB00 ;
+	border: none ;
+	color: #000 ;
+	margin: 20px ;
+	padding: 10px 20px 10px 20px ;
+	text-align: center ;
+	text-decoration: none ;
+	text-transform: uppercase ;
+}
+
+.sub
+{
+	background-color: #0C60EE;
+	color: #FFF;
+	height: 30px ;
+	position: absolute ;
+	right: 45px ;
+	text-transform: uppercase ;
+	top: 20px ;
+	width: 100px 
+}
