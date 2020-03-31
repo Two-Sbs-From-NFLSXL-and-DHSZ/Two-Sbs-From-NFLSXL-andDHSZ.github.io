@@ -26,12 +26,13 @@ a
 {
   background-image: url( "../repository/home-back.png" );
   display: inline ;
+  margin-bottom: 15px ;
 }
 
 .Navi
 {
   color: #000 ;
-  display: inline-block ;
+  display: inline ;
   font-family: "微软雅黑" ;
   font-size: 16px ;
   font-weight: 1000 ;

@@ -1,19 +1,21 @@
 .exppage
 {
 	margin: 20px ;
-	position: relative ;
 }
 
 .exp
 {
 	background-color: #FFF ;
 	border: solid #F5F5F5 ;
+	display: inline-grid ;
 	font-size: 15pt ;
-	margin: 20px 50px ;
+	margin: 20px ;
 	overflow: hidden ;
 	padding: 20px ;
+	position: relative ;
 	transition: filter .3s ease-in;
 	text-align: center ;
+	width: 300px ;
 }
 
 .exp:hover 
@@ -49,8 +51,23 @@ button
 	color: #FFF;
 	height: 30px ;
 	position: absolute ;
+	right: -40px ;
+	text-transform: uppercase ;
+	top: 20px ;
+	transform: rotate( 45deg ) ;
+	width: 150px ;
+	transition: all 1s ;
+}
+
+.sub:hover
+{
+
+	background-color: #0C60EE;
+	color: #FFF;
+	height: 30px ;
+	position: absolute ;
 	right: 45px ;
 	text-transform: uppercase ;
 	top: 20px ;
-	width: 100px 
+	width: 100px ;
 }

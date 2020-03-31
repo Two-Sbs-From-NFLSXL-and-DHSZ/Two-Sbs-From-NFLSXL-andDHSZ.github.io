@@ -3,6 +3,7 @@
 	background-color: #000 ;
 	background-image: url( "../repository/preface.jpg" ) ;
 	background-size: 100% ;
+	margin-top: 15px ;
 	padding: 400px 100px 150px 100px ;
 	text-align: center ;
 }
