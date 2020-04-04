@@ -52,10 +52,10 @@
 			var navi_class = document.querySelector ( ".Navigation" ) ;
 			var navi_a = navi_class.getElementsByTagName ( "a" ) ;
 
-			navi_class.style = "position: fixed; left: -200px; z-index: 10; padding: 20px; border: 1px solid #000; top: 0px; transition: all .25s; height: 1000px" ;
+			navi_class.style = "position: fixed; left: -75%; z-index: 10; padding: 20px; border: 1px solid #000; top: 0px; transition: all .25s; height: 100%; width: 50%" ;
 
 			for ( var i = 0 ; i < navi_a.length ; i++ ) 
-				navi_a [ i ].style = "display: grid" ;
+				navi_a [ i ].style = "display: grid; font-size: 40pt; margin: 100px 0;" ;
 
 			var sep = document.getElementsByClassName ( "sep" ) ;
 
@@ -68,7 +68,15 @@
 			ftnav_class.style = "padding: 20px ";
 
 			for ( var i = 0 ; i < ftnav_div.length ; i++ )
-				ftnav_div [ i ].style = "display: grid; margin: 0 10px" ;
+				ftnav_div [ i ].style = "display: grid; margin: 0 10px; font-size: 30pt" ;
+
+			var lang = document.getElementById ( "foot" ) ;
+
+			lang.style = "font-size: 30pt" ;
+
+			var select = document.getElementsByTagName ( "select" ) ;
+
+			select [ 0 ].style = "font-size: 25pt; height: 100px" ;
 		}
 
 		var vis = false ;
@@ -82,16 +90,16 @@
 			}
 			else
 			{
-				document.querySelector ( ".Navigation" ).style.left = "-200px" ;
+				document.querySelector ( ".Navigation" ).style.left = "-75%" ;
 				vis = false ;
 			}
 		}
 
 		document.addEventListener ( "click" , function ( e ) 
 		{
-			if ( vis && e.clientX >= 200 )
+			if ( vis && e.clientX >= 500 )
 			{
-				document.querySelector ( ".Navigation" ).style.left = "-200px" ;
+				document.querySelector ( ".Navigation" ).style.left = "-75%" ;
 				vis = false ;
 			}
 		} )

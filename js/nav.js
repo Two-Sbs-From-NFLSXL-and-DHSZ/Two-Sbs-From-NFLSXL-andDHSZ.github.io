@@ -75,7 +75,7 @@ function nav ( ind )
 
     document.write ( ">" ) ;
 
-    document.write ( "About Us" ) ;
+    document.write ( "About" ) ;
     document.write ( "</a>" ) ;
 
     document.write ( "</nav>" ) ; 
