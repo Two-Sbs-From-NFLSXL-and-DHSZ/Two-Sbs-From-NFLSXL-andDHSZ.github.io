@@ -1,31 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
-<html>
+<html lang = "en" >
 
 <head>
-	<title> Device Detect </title>
+    <title> Test </title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <script type = "text/javascript" src = "../js/nav.js" >
+    </script>
+
+    <link rel = 'shortcut icon' href = '../repository/favicon.ico'>
+    <link rel = 'stylesheet' type = 'text/css' href = '../css/general.css' >
 </head>
 
 <body>
-	<p> Your Device is: <span id = "device" > </span> </p>
-
-	<p> Your Resolution is: <span id = "res" > </span> </p>
-
-	<script type = "text/javascript" > 
-		var id1 = document.getElementById ( "device" ) ;
-		var id2 = document.getElementById ( "res" ) ;
-
-		function f ()
-		{
-			id2.innerHTML = `${ window.screen.width }x${ window.screen.height }` ;
-
-			id1.innerHTML = navigator.userAgent ;
- 		}
-
-		f () ;
+	<script type = "text/javascript" >
+		nav ( -1 ) ;
 	</script>
 </body>
+
+<footer>
+    <script type = "text/javascript" src = "../js/foot.js" >
+    </script>
+
+    <p id = "foot" > Language:
+
+    	<select onchange = 'location.href = this.options [ this.selectedIndex ].value' id = "lang" >
+    		<option value = "" selected = "selected" > English </option>
+    		<option value = "" > 中文简体 </option>
+    		<option value = "" > 中文繁體(中國香港及澳門) </option>
+    		<option value = "" > 中文繁體(中國臺灣) </option>  
+    	</select> 
+    </p>
+
+	<script type = "text/javascript" >
+		if ( window.screen.width < 2500 )
+		{
+			var new_a = document.createElement ( "a" ) ;
+
+			new_a.innerHTML = "<img src = '../repository/menu.png' style = 'height: 50px ; width: 50px'>" ;
+			new_a.style = "position: fixed; left: 10px ; top: 0px " ;
+			new_a.href = "javascript:visible ();" ;
+
+			var header = document.getElementById ( "header" ) ;
+
+			header.appendChild ( new_a ) ;
+
+			var title = document.getElementById ( "tit-pic" ) ;
+
+			title.style = "margin-left: 30%" ;
+
+			var navi_class = document.querySelector ( ".Navigation" ) ;
+			var navi_a = navi_class.getElementsByTagName ( "a" ) ;
+
+			navi_class.style = "position: fixed; left: -200px; z-index: 10; padding: 20px; border: 1px solid #000; top: 0px; transition: all .25s; height: 1000px" ;
+
+			for ( var i = 0 ; i < navi_a.length ; i++ ) 
+				navi_a [ i ].style = "display: grid" ;
+
+			var sep = document.getElementsByClassName ( "sep" ) ;
+
+			for ( var i = 0 ; i < sep.length ; i++ )
+				sep [ i ].style = "opacity: 0" ;
+
+			var ftnav_class = document.querySelector ( ".foot-nav" ) ;
+			var ftnav_div = ftnav_class.getElementsByTagName ( "div" ) ;
+
+			ftnav_class.style = "padding: 20px ";
+
+			for ( var i = 0 ; i < ftnav_div.length ; i++ )
+				ftnav_div [ i ].style = "display: grid; margin: 0 10px" ;
+		}
+
+		var vis = false ;
+
+		function visible ()
+		{
+			if ( ! vis )
+			{
+				document.querySelector ( ".Navigation" ).style.left = 0 ;
+				vis = true ;
+			}
+			else
+			{
+				document.querySelector ( ".Navigation" ).style.left = "-200px" ;
+				vis = false ;
+			}
+		}
+
+		document.addEventListener ( "click" , function ( e ) 
+		{
+			if ( vis && e.clientX >= 200 )
+			{
+				document.querySelector ( ".Navigation" ).style.left = "-200px" ;
+				vis = false ;
+			}
+		} )
+	</script>
+</footer>
 
 </html>
