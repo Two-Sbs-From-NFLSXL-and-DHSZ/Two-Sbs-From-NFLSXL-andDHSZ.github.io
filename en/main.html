@@ -78,6 +78,59 @@
         <option value = "../zh-jyut/main.html" > 中文繁體(中國香港及澳門) </option>
         <option value = "../zh-fan/main.html" > 中文繁體(中國臺灣) </option>  
     </select> 
+    
+    <script type = "text/javascript" src = "../js/mobile.js" >
+    </script>
+
+    <script type = "text/javascript" >
+        if ( window.screen.width < 1041 )
+        {
+            var title = document.querySelector ( ".typing" ) ;
+
+            title.style.animation = "none" ;
+            title.style.border = "none" ;
+            title.style.width = "75%" ;
+            title.style.overflow = "static" ;
+            title.style.whiteSpace = "normal" ;
+            title.style.margin = "0 12.5%" ;
+
+            for ( var i = 0 ; i < 3 ; i++ )
+            {
+                idlist [ i ].style.opacity = "1" ;
+            }
+        }
+
+        if ( window.screen.width < 500 )
+        {
+            var imglist = document.querySelector ( ".model" ).getElementsByTagName ( "img" ) ;
+
+            for ( var i = 0 ; i < imglist.length ; i++ )
+            {
+                imglist [ i ].style = "width: 75%; margin-left: 0; margin-right: 0" ;
+            }
+
+            var plist = [] ;
+            plist [ 0 ] = document.getElementById ( "exp" ) ;
+            plist [ 1 ] = document.getElementById ( "info" ) ;
+            plist [ 2 ] = document.getElementById ( "sche" ) ;
+
+            var classes = [] ;
+            classes [ 0 ] = document.querySelector ( ".exp" ) ;
+            classes [ 1 ] = document.querySelector ( ".info" ) ;
+            classes [ 2 ] = document.querySelector ( ".sche" ) ;
+
+            for ( var i = 0 ; i < plist.length ; i++ )
+            {
+                plist [ i ].style = "position: static; font-size: 40px; left: auto; text-align = center; margin: 0 12.5%" ;
+
+                var temp = plist [ i ].getElementsByTagName ( "p" ) ;
+
+                temp [ 0 ].style.textAlign = "left" ;
+
+                classes [ i ].style.textAlign = "center" ;
+            }
+        }
+    </script>
 </footer>
 
 </html>

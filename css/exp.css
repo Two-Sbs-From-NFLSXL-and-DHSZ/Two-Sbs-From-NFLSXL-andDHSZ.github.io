@@ -1,4 +1,4 @@
-.exppage
+ .exppage
 {
 	margin: 20px ;
 }
@@ -56,18 +56,4 @@ button
 	top: 20px ;
 	transform: rotate( 45deg ) ;
 	width: 150px ;
-	transition: all 1s ;
-}
-
-.sub:hover
-{
-
-	background-color: #0C60EE;
-	color: #FFF;
-	height: 30px ;
-	position: absolute ;
-	right: 45px ;
-	text-transform: uppercase ;
-	top: 20px ;
-	width: 100px ;
 }

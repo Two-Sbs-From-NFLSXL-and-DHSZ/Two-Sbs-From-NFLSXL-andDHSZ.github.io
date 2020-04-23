@@ -79,6 +79,34 @@
         <option value = "../zh-jyut/experiment.html" > 中文繁體(中國香港及澳門) </option>
         <option value = "../zh-fan/experiment.html" > 中文繁體(中國臺灣) </option>  
     </select> 
+    
+    <script type = "text/javascript" src = "../js/mobile.js" >
+    </script>
+
+    <script type = "text/javascript" >
+        if ( window.screen.width < 500 )
+        {
+            document.querySelector ( ".exppage" ).style.textAlign = "center" ;
+
+            var classlist = document.getElementsByClassName ( "exp" ) ;
+
+            for ( var i = 0 ; i < classlist.length ; i++ )
+            {
+                classlist [ i ].style.fontSize = "40pt" ;
+                classlist [ i ].style.width = "75%" ;
+                classlist [ i ].style.overflow = "visible" ;
+
+                classlist [ i ].querySelector ( ".sub" ).style = "transform: none; height: 75px; width: 175px"
+            }
+
+            var buttonlist = document.getElementsByTagName ( "button" ) ;
+
+            for ( var i = 0 ; i < buttonlist.length ; i++ )
+            {
+                buttonlist [ i ].style.fontSize = "40pt" ;
+            }
+        }
+    </script>
 </footer>
 
 </html>

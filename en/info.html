@@ -77,6 +77,21 @@
         <option value = "../zh-jyut/info.html" > 中文繁體(中國香港及澳門) </option>
         <option value = "../zh-fan/info.html" > 中文繁體(中國臺灣) </option>  
     </select> 
+
+    <script type = "text/javascript" src = "../js/mobile.js" >
+    </script>
+
+    <script type = "text/javascript" >
+    	if ( window.screen.width < 500 )
+    	{
+    		var button = document.getElementsByTagName ( "button" ) ;
+
+    		for ( i = 0 ; i < button.length ; i++ )
+    		{
+    			button [ i ].style = "font-size: 30pt; width: 100%; margin: 0" ;
+    		}
+    	}
+    </script>
 </footer>
 
 </html>

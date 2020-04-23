@@ -33,11 +33,11 @@
 
             <div id = "title-year" >
             </div>
-            
+
             <button type = "button" id = "right" >
                 &gt;
             </button>
-            
+
             <table align = "middle" id = "content" >
             </table>
 
@@ -66,6 +66,75 @@
         <option value = "../zh-jyut/schedule.html" > 中文繁體(中國香港及澳門) </option>
         <option value = "../zh-fan/schedule.html" > 中文繁體(中國臺灣) </option>  
     </select> 
+
+    <script type = "text/javascript" src = "../js/mobile.js" >
+    </script>
+
+    <script type = "text/javascript" >
+        if ( window.screen.width < 500 )
+        {
+            document.getElementById ( "countdown" ).style.opacity = "0" ;
+
+            var thlist = document.getElementsByTagName ( "th" ) ;
+
+            for ( var i = 0 ; i < thlist.length ; i++ )
+                thlist [ i ].style.fontSize = "30pt" ;
+
+            document.getElementById ( "schetable" ).style.margin = "50px" ;
+
+            var buttonlist = document.getElementsByTagName ( "button" ) ;
+
+            for ( var i = 0 ; i < buttonlist.length ; i++ )
+                buttonlist [ i ].style.fontSize = "40pt" ;
+
+            var count = document.getElementById ( "countdown" ) ;
+
+            count.style = "opacity: 0" ;
+
+            setTimeout ( "count.style = 'position: fixed; right: -60%; width: 50%; z-index: 10'" , 1000 ) ;
+
+            var h4 = count.getElementsByTagName ( "h4" ) ;
+
+            h4 [ 0 ].style.fontSize = "50pt" ;
+
+            var p = count.getElementsByTagName ( "p" ) ;
+
+            for ( var i = 0 ; i < p.length ; i++ )
+            {
+                p [ i ].style.fontSize = "40pt" ;
+
+                var span = p [ i ].getElementsByTagName ( "span" ) ;
+
+                span [ 0 ].style.fontSize = "40pt" ;
+            }
+
+            var startx , starty ;
+
+            document.addEventListener ( "touchstart" , function ( e )
+            {
+                startx = e.touches [ 0 ].pageX ;
+                starty = e.touches [ 0 ].pageY ;
+            }, false);
+
+            document.addEventListener ( "touchend" ,  function ( e )
+            {
+                var endx = e.changedTouches [ 0 ].pageX ;
+                var endy = e.changedTouches [ 0 ].pageY ;
+
+                if ( startx - endx > 100 && Math.abs ( starty - endy ) < 200 && place == 0 )
+                {
+                    count.style.right = 0 ;
+                    place = 1 ; 
+                }
+
+                if ( endx - startx > 100 && Math.abs ( starty - endy ) < 200 && place == 1 )
+                {
+                    count.style.right = "-60%" ;
+                    place = 0 ; 
+                }
+            } , false )
+        }
+    </script>
 </footer>
 
 </html>

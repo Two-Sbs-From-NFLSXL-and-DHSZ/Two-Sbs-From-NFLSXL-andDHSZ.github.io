@@ -63,6 +63,26 @@
         <option value = "../zh-jyut/about.html" > 中文繁體(中國香港及澳門) </option>
         <option value = "../zh-fan/about.html" > 中文繁體(中國臺灣) </option>  
     </select> 
+
+    <script type = "text/javascript" src = "../js/mobile.js" >
+    </script>
+
+    <script type = "text/javascript">
+        if ( window.screen.width <= 500 )
+        {
+            var head = document.getElementsByTagName ( "h4" ) ;
+
+            for ( var i = 0 ; i < head.length ; i++ )
+                head [ i ].style = "font-size: 45.5556pt; -webkit-text-size-adjust: none" ;
+
+            var c = document.querySelector ( ".layout" );
+
+            var p = c.getElementsByTagName ( "p" ) ;
+
+            for ( var i = 0 ; i < p.length ; i++ )
+                p [ i ].style = "font-size: 40pt; -webkit-text-size-adjust: none;" ;
+        }
+    </script>
 </footer>
 
 </html>
