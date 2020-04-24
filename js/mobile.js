@@ -16,6 +16,7 @@ if ( window.screen.width < 500 )
 	var pic = document.getElementById ( "tit-pic" ) ;
 
 	pic.style.textAlign = "center" ;
+	pic.style.margin = "0 10%" ;
 
 	header.appendChild ( new_a ) ;
 
