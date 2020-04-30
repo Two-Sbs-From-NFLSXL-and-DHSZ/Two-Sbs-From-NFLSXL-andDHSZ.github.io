@@ -137,6 +137,7 @@ function countdownact ()
 	
 	if ( is < 10 ) s.innerHTML = '0' + is ;
 	else s.innerHTML = is ;
+	*/
 }
 
 function countdownap ()
