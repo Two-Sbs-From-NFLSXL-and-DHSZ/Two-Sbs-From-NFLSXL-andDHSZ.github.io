@@ -2,39 +2,41 @@ var id = document.getElementById ( "status" ) ;
 
 var ap = [] ;
 
-ap [ 0 ] = { subject: "United States Government and Politics" , time: 50408 , len: 225 } ;
-ap [ 1 ] = { subject: "Physics C: Mechanics" , time: 50412 , len: 130 } ;
-ap [ 2 ] = { subject: "Physics C: Electricity and Magnetism" , time: 50414 , len: 130 } ;
-ap [ 3 ] = { subject: "Calculus AB" , time: 50508 , len: 315 } ;
-ap [ 4 ] = { subject: "Calculus BC" , time: 50508 , len: 315 } ;
-ap [ 5 ] = { subject: "German Language and Culture" , time: 50512 , len: 300 } ;
-ap [ 6 ] = { subject: "Human Geography" , time: 50512 , len: 215 } ;
-ap [ 7 ] = { subject: "English Literature and Composition" , time: 50608 , len: 300 } ;
-ap [ 8 ] = { subject: "European History" , time: 50612 , len: 315 } ;
-ap [ 9 ] = { subject: "Physics 2: Algebra-Based" , time: 50612 , len: 300 } ;
-ap [ 10 ] = { subject: "Chemistry" , time: 50708 , len: 315 } ;
-ap [ 11 ] = { subject: "Spanish Literature and Culture" , time: 50708 , len: 300 } ;
-ap [ 12 ] = { subject: "Japanese Literature and Culture" , time: 50712 , len: 215 } ;
-ap [ 13 ] = { subject: "Physics 1: Algebra-Based" , time: 50712 , len: 300 } ;
-ap [ 14 ] = { subject: "United States History" , time: 50808 , len: 315 } ;
-ap [ 15 ] = { subject: "Art History" , time: 50812 , len: 300 } ;
-ap [ 16 ] = { subject: "Computer Science A" , time: 50812 , len: 300 } ;
-ap [ 17 ] = { subject: "Biology" , time: 51108 , len: 300 } ;
-ap [ 18 ] = { subject: "Chinese Language and Culture" , time: 51112 , len: 215 } ;
-ap [ 19 ] = { subject: "Environmental Science" , time: 51112 , len: 300 } ;
-ap [ 20 ] = { subject: "Spanish Language and Culture" , time: 51208 , len: 300 } ;
-ap [ 21 ] = { subject: "Latin" , time: 51212 , len: 300 } ;
-ap [ 22 ] = { subject: "Psychology" , time: 51212 , len: 200 } ;
-ap [ 23 ] = { subject: "English Language and Composition" , time: 51308 , len: 315 } ;
-ap [ 24 ] = { subject: "Microeconomics" , time: 51312 , len: 210 } ;
-ap [ 25 ] = { subject: "Music Theory" , time: 51312 , len: 240 } ;
-ap [ 26 ] = { subject: "Comparative Government and Politics" , time: 51408 , len: 225 } ;
-ap [ 27 ] = { subject: "World History: Modern" , time: 51408 , len: 315 } ;
-ap [ 28 ] = { subject: "Italian Language and Culture" , time: 51412 , len: 300 } ;
-ap [ 29 ] = { subject: "Macroeconomics" , time: 51412 , len: 210 } ;
-ap [ 30 ] = { subject: "Computer Science Principle" , time: 51508 , len: 200 } ;
-ap [ 31 ] = { subject: "French Language and Culture" , time: 51508 , len: 300 } ;
-ap [ 32 ] = { subject: "Statistics" , time: 51512 , len: 300 } ;
+ap [ 0 ] = { subject: "United States Government and Politics" , time: 51104 , len: 225 } ;
+ap [ 1 ] = { subject: "Physics C: Mechanics" , time: 51100 , len: 130 } ;
+ap [ 2 ] = { subject: "Physics C: Electricity and Magnetism" , time: 51102 , len: 130 } ;
+ap [ 3 ] = { subject: "Calculus AB" , time: 51202 , len: 315 } ;
+ap [ 4 ] = { subject: "Calculus BC" , time: 51202 , len: 315 } ;
+ap [ 5 ] = { subject: "German Language and Culture" , time: 52000 , len: 300 } ;
+ap [ 6 ] = { subject: "Human Geography" , time: 51204 , len: 215 } ;
+ap [ 7 ] = { subject: "English Literature and Composition" , time: 51302 , len: 300 } ;
+ap [ 8 ] = { subject: "European History" , time: 51304 , len: 315 } ;
+ap [ 9 ] = { subject: "Physics 2: Algebra-Based" , time: 51300 , len: 300 } ;
+ap [ 10 ] = { subject: "Chemistry" , time: 51402 , len: 315 } ;
+ap [ 11 ] = { subject: "Spanish Literature and Culture" , time: 52204 , len: 300 } ;
+ap [ 12 ] = { subject: "Japanese Literature and Culture" , time: 51904 , len: 215 } ;
+ap [ 13 ] = { subject: "Physics 1: Algebra-Based" , time: 51404 , len: 300 } ;
+ap [ 14 ] = { subject: "United States History" , time: 51502 , len: 315 } ;
+ap [ 15 ] = { subject: "Art History" , time: 51500 , len: 300 } ;
+ap [ 16 ] = { subject: "Computer Science A" , time: 51504 , len: 300 } ;
+ap [ 17 ] = { subject: "Biology" , time: 51802 , len: 300 } ;
+ap [ 18 ] = { subject: "Chinese Language and Culture" , time: 51800 , len: 215 } ;
+ap [ 19 ] = { subject: "Environmental Science" , time: 51804 , len: 300 } ;
+ap [ 20 ] = { subject: "Spanish Language and Culture" , time: 51400 , len: 300 } ;
+ap [ 21 ] = { subject: "Latin" , time: 51200 , len: 300 } ;
+ap [ 22 ] = { subject: "Psychology" , time: 51902 , len: 200 } ;
+ap [ 23 ] = { subject: "English Language and Composition" , time: 52002 , len: 315 } ;
+ap [ 24 ] = { subject: "Microeconomics" , time: 52004 , len: 210 } ;
+ap [ 25 ] = { subject: "Music Theory" , time: 51900 , len: 240 } ;
+ap [ 26 ] = { subject: "Comparative Government and Politics" , time: 52200 , len: 225 } ;
+ap [ 27 ] = { subject: "World History: Modern" , time: 52102 , len: 315 } ;
+ap [ 28 ] = { subject: "Italian Language and Culture" , time: 51904 , len: 300 } ;
+ap [ 29 ] = { subject: "Macroeconomics" , time: 52104 , len: 210 } ;
+ap [ 30 ] = { subject: "Computer Science Principle" , time: 52700 , len: 200 } ;
+ap [ 31 ] = { subject: "French Language and Culture" , time: 52100 , len: 300 } ;
+ap [ 32 ] = { subject: "Statistics" , time: 52202 , len: 300 } ;
+
+ap.sort ( function ( a , b ) { return a.time - b.time } ) ;
 
 function comp ( date , add )
 {
@@ -180,12 +182,14 @@ function ap_status ()
 
 		str += `<th> ${ parseInt ( ap [ i ].time / 10000 ) }/${ parseInt ( ap [ i ].time % 10000 / 100 ) } ${ ap [ i ].time % 100 }:00 </th> ` ;
 
-		str += `<th> ${ parseInt ( ap [ i ].len / 100 ) }:` ;
+		//str += `<th> ${ parseInt ( ap [ i ].len / 100 ) }:` ;
 
-		if ( ap [ i ].len % 100 < 10 )
-			str += "0" ;
+		//if ( ap [ i ].len % 100 < 10 )
+			//str += "0" ;
 
-		str += `${ ap [ i ].len % 100 } </th>` ;
+		//str += `${ ap [ i ].len % 100 } </th>` ;
+
+		str += "<th> 45 mins </th>"
 
 		var temp = dif ( ap [ i ].time ) ;
 

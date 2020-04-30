@@ -1,7 +1,7 @@
-var sat = [ 314 , 606 , 829 , 1003 , 1107 , 1205 ] ;
-var act = [ 208 , 404 , 613 , 718 , 912 , 1024 , 1212 ] ;
-var ap = 504 ;
-var alevel = 511 ;
+var sat = [ 314 , 1232 ] ;
+var act = [ 208 , 1232 ] ;
+var ap = 511 ;
+var alevel = 1232 ;
 
 var dict = [ { id: '' , value: 0 } , { id: '' , value: 0 } , { id: '' , value: 0 } , { id: '' , value: 0 } ] ;
 
@@ -61,6 +61,14 @@ function countdown ()
 
 	for ( var i = 0 ; i < 4 ; i++ ) 
 	{
+		if ( dict [ i ].value == 1232 )
+		{
+			document.write ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #00DFB9' > <p> ${ dict [ i ].id } test <span class = 'grey' > cancelled </span>`)
+			continue ;
+		}
+		else if ( dict [ i ].value == undefined )
+			continue ;
+
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
 
 		if ( d < 0 ) d = 0 ;
