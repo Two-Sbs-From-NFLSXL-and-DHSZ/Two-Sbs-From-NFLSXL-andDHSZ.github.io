@@ -156,7 +156,7 @@ function countdownap ()
 	}
 
 	var tmm = 4 ;
-	var tdd = 11 ;
+	var tdd = 12 ;
 	var th = 0 ;
 	var tm = 0 ;
 	var ts = 0 ;
