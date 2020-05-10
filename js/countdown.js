@@ -1,6 +1,6 @@
 var sat = [ 314 , 1232 ] ;
 var act = [ 208 , 1232 ] ;
-var ap = 511 ;
+var ap = 512 ;
 var alevel = 1232 ;
 
 var dict = [ { id: '' , value: 0 } , { id: '' , value: 0 } , { id: '' , value: 0 } , { id: '' , value: 0 } ] ;
