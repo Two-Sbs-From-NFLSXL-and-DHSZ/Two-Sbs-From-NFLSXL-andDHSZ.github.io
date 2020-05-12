@@ -200,7 +200,7 @@ function ap_status ()
 		var im = parseInt ( temp.substr ( 8 , 2 ) ) ;
 		var is = parseInt ( temp.substr ( 10 , 2 ) ) ;
 
-		if ( ! comp ( ap [ i ].time , ap [ i ].len ) ) 
+		if ( ! comp ( ap [ i ].time , 45 ) ) 
 			str += "<th class = 'end' > Ended </th>" ;
 		else if ( ! comp ( ap [ i ].time , 0 ) ) 
 			str += "<th class = 'ongoing' > Ongoing </th>" ;
