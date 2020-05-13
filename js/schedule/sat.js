@@ -24,6 +24,13 @@ function comp ( date )
 	else return 1 ;
 }
 
+var size ;
+
+if ( window.screen.width < 500 )
+	size = "40pt" ;
+else
+	size = "15pt" ;
+
 function sat_status ()
 {
 	var str = "<tr id = 'first-line'> <th> Test Time </th> <th> Avaliable Test Center </th> <th> SAT II </th> <th> Status </th> </tr>" ;
@@ -32,28 +39,28 @@ function sat_status ()
 	{
 		str += "<tr>" ;
 
-		str += `<th> ${ parseInt ( sat [ i ].time / 100 ) }/${ sat [ i ].time % 100 } </th> ` ;
+		str += `<th style = 'font-size: ${ size }' > ${ parseInt ( sat [ i ].time / 100 ) }/${ sat [ i ].time % 100 } </th> ` ;
 
-		str += `<th> ${ sat [ i ].center } </th>` ;
+		str += `<th style = 'font-size: ${ size }'> ${ sat [ i ].center } </th>` ;
 
 		if ( sat [ i ].sat2 )
-			str += "<th> Yes </th>" ;
+			str += `<th style = 'font-size: ${ size }' > Yes </th>` ;
 		else
-			str += "<th> No </th>" ;
+			str += `<th style = 'font-size: ${ size }' > No </th>` ;
 
 		
 		if ( sat [ i ].can == 1 )
-			str += "<th class = 'cancel' > Cancelled </th>" ;
+			str += `<th class = 'cancel' style = 'font-size: ${ size }' > Cancelled </th>` ;
 		else if ( sat [ i ].can == -1 )
-			str += "<th class = 'cancel' > Uncertain </th>" ;
+			str += `<th class = 'cancel' style = 'font-size: ${ size }' > Uncertain </th>` ;
 		else if ( comp ( sat [ i ].ddl ) )
-			str += "<th class = 'ava' > Avaliable </th>" ;
+			str += `<th class = 'ava' style = 'font-size: ${ size }' > Avaliable </th>` ;
 		else if ( comp ( sat [ i ].time ) )  
-			str += "<th class = 'reg-end' > Registration Ended </th>" ;
+			str += `<th class = 'reg-end' style = 'font-size: ${ size }' > Registration Ended </th>` ;
 		else if ( comp ( sat [ i ].post ) )
-			str += "<th class = 'end' > Test Ended </th>" ;
+			str += `<th class = 'end' style = 'font-size: ${ size }' > Test Ended </th>` ;
 		else
-			str += "<th class = 'score' > Score Available </th>" ;
+			str += `<th class = 'score' style = 'font-size: ${ size }' > Score Available </th>` ;
 
 		str += "</tr>" ;
 	} 

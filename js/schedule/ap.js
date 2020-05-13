@@ -170,6 +170,13 @@ function dif ( date )
 	return ans ;
 }
 
+var size ;
+
+if ( window.screen.width < 500 )
+	size = "40pt" ;
+else
+	size = "15pt" ;
+
 function ap_status ()
 {
 	var str = '' ;
@@ -178,18 +185,18 @@ function ap_status ()
 	{
 		str += "<tr>" ;
 
-		str += `<th> ${ ap [ i ].subject } </th>` ;
+		str += `<th style = 'font-size: ${ size }' > ${ ap [ i ].subject } </th>` ;
 
-		str += `<th> ${ parseInt ( ap [ i ].time / 10000 ) }/${ parseInt ( ap [ i ].time % 10000 / 100 ) } ${ ap [ i ].time % 100 }:00 </th> ` ;
+		str += `<th style = 'font-size: ${ size }' > ${ parseInt ( ap [ i ].time / 10000 ) }/${ parseInt ( ap [ i ].time % 10000 / 100 ) } ${ ap [ i ].time % 100 }:00 </th> ` ;
 
-		//str += `<th> ${ parseInt ( ap [ i ].len / 100 ) }:` ;
+		//str += `<th style = 'font-size: ${ size }' > ${ parseInt ( ap [ i ].len / 100 ) }:` ;
 
 		//if ( ap [ i ].len % 100 < 10 )
 			//str += "0" ;
 
 		//str += `${ ap [ i ].len % 100 } </th>` ;
 
-		str += "<th> 45 mins </th>"
+		str += `<th style = 'font-size: ${ size }' > 45 mins </th>` ;
 
 		var temp = dif ( ap [ i ].time ) ;
 
@@ -201,24 +208,24 @@ function ap_status ()
 		var is = parseInt ( temp.substr ( 10 , 2 ) ) ;
 
 		if ( ! comp ( ap [ i ].time , 45 ) ) 
-			str += "<th class = 'end' > Ended </th>" ;
+			str += `<th class = 'end' style = 'font-size: ${ size }' > Ended </th>` ;
 		else if ( ! comp ( ap [ i ].time , 0 ) ) 
-			str += "<th class = 'ongoing' > Ongoing </th>" ;
+			str += `<th class = 'ongoing' style = 'font-size: ${ size }' > Ongoing </th>` ;
 		else if ( imm > 1 )
-			str += `<th> ${ imm } Months </th>` ;
+			str += `<th style = 'font-size: ${ size }' > ${ imm } Months </th>` ;
 		else if ( imm == 1 )
-			str += `<th> ${ imm } Month </th>` ;
+			str += `<th style = 'font-size: ${ size }' > ${ imm } Month </th>` ;
 		else if ( iww > 1 )
-			str += `<th> ${ iww } Weeks </th>` ;
+			str += `<th style = 'font-size: ${ size }' > ${ iww } Weeks </th>` ;
 		else if ( iww == 1 )
-			str += `<th> ${ iww } Week </th>` ; 
+			str += `<th style = 'font-size: ${ size }' > ${ iww } Week </th>` ; 
 		else if ( idd > 1 ) 
-			str += `<th> ${ idd } Days </th>` ;
+			str += `<th style = 'font-size: ${ size }' > ${ idd } Days </th>` ;
 		else if ( idd == 1 )
-			str += `<th> ${ idd } Day </th>` ;
+			str += `<th style = 'font-size: ${ size }' > ${ idd } Day </th>` ;
 		else
 		{
-			str += "<th class = 'urgent' >" 
+			str += `<th class = 'urgent' style = 'font-size: ${ size }' >` ;
 
 			if ( ih < 10 ) str += '0' ; 
 

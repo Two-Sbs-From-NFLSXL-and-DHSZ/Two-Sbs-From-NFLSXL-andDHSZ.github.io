@@ -21,6 +21,13 @@ function comp ( date )
 	else return 1 ;
 }
 
+var size ;
+
+if ( window.screen.width < 500 )
+	size = "40pt" ;
+else
+	size = "15pt" ;
+
 function alevel_status ()
 {
 	var str = "<tr id = 'first-line'> <th> Organization </th> <th> Start Time </th> <th> End Time </th> </tr>" ;
@@ -29,11 +36,11 @@ function alevel_status ()
 	{
 		str += "<tr>" ;
 
-		str += `<th> ${ alevel [ i ].org } </th>` ;
+		str += `<th style = 'font-size: ${ size }' > ${ alevel [ i ].org } </th>` ;
 
-		str += `<th> ${ parseInt ( alevel [ i ].start / 100 ) }/${ alevel [ i ].start % 100 } </th> ` ;
+		str += `<th style = 'font-size: ${ size }' > ${ parseInt ( alevel [ i ].start / 100 ) }/${ alevel [ i ].start % 100 } </th> ` ;
 
-		str += `<th> ${ parseInt ( alevel [ i ].end / 100 ) }/${ alevel [ i ].end % 100 } </th> ` ;
+		str += `<th style = 'font-size: ${ size }' > ${ parseInt ( alevel [ i ].end / 100 ) }/${ alevel [ i ].end % 100 } </th> ` ;
 	} 
 
 	id.innerHTML = str ;

@@ -23,6 +23,13 @@ function comp ( date )
 	else return 1 ;
 }
 
+var size ;
+
+if ( window.screen.width < 500 )
+	size = "40pt" ;
+else
+	size = "15pt" ;
+
 function act_status ()
 {
 	var str = "<tr id = 'first-line'> <th> Test Time </th> <th> Avaliable Test Center </th> <th> Status </th> </tr>" ;
@@ -31,18 +38,18 @@ function act_status ()
 	{
 		str += "<tr>" ;
 
-		str += `<th> ${ parseInt ( act [ i ].time / 100 ) }/${ act [ i ].time % 100 } </th> ` ;
+		str += `<th style = 'font-size: ${ size }' > ${ parseInt ( act [ i ].time / 100 ) }/${ act [ i ].time % 100 } </th> ` ;
 
-		str += `<th> ${ act [ i ].center } </th>` ;
+		str += `<th style = 'font-size: ${ size }' > ${ act [ i ].center } </th>` ;
 
-		if ( comp ( act [ i ].ddl ) )
-			str += "<th class = 'ava' > Avalable </th>" ;
+		if ( comp ( act [ i ].ddl ) )available
+			str += `<th class = 'ava' style = 'font-size: ${ size }' > Available </th>` ;
 		else if ( comp ( act [ i ].time ) )  
-			str += "<th class = 'reg-end' > Registration Ended </th>" ;
+			str += `<th class = 'reg-end' style = 'font-size: ${ size }' > Registration Ended </th>` ;
 		else if ( comp ( act [ i ].post ) )
-			str += "<th class = 'end' > Test Ended </th>" ;
+			str += `<th class = 'end' style = 'font-size: ${ size }' > Test Ended </th>` ;
 		else
-			str += "<th class = 'score' > Score Available </th>" ;
+			str += `<th class = 'score' style = 'font-size: ${ size }' > Score Available </th>` ;
 
 		str += "</tr>" ;
 	} 
