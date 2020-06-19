@@ -4,7 +4,7 @@ var act = [] ;
 
 act [ 0 ] = { ddl: 110 , time: 208 , post: 304 , center: "North America and Europe" } ;
 act [ 1 ] = { ddl: 208 , time: 404 , post: 428 , center: "All" } ;
-act [ 2 ] = { ddl: 508 , time: 613 , post: 607 , center: "All" } ;
+act [ 4 ] = { ddl: 508 , time: 613 , post: 708 , center: "All" } ;
 act [ 3 ] = { ddl: 619 , time: 718 , post: 811 , center: "All except NY" } ;
 act [ 4 ] = { ddl: 807 , time: 912 , post: 1006 , center: "All" } ;
 act [ 5 ] = { ddl: 920 , time: 1024 , post: 1117 , center: "All" } ;
@@ -42,7 +42,7 @@ function act_status ()
 
 		str += `<th style = 'font-size: ${ size }' > ${ act [ i ].center } </th>` ;
 
-		if ( comp ( act [ i ].ddl ) )available
+		if ( comp ( act [ i ].ddl ) )
 			str += `<th class = 'ava' style = 'font-size: ${ size }' > Available </th>` ;
 		else if ( comp ( act [ i ].time ) )  
 			str += `<th class = 'reg-end' style = 'font-size: ${ size }' > Registration Ended </th>` ;

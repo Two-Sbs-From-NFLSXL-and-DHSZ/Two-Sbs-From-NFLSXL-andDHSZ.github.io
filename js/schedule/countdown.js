@@ -37,8 +37,7 @@ function smaller ( month , date , hour , minute , second )
 
 function countdownact ()
 {
-	document.querySelector ( ".countdown" ).innerHTML = "<p class = 'cancel' > Cancelled </p>" ;
-	/*var t = new Date () ;
+	var t = new Date () ;
 
 	var cmm = t.getMonth () ;
 	var cdd = t.getDate () ;
@@ -137,7 +136,6 @@ function countdownact ()
 	
 	if ( is < 10 ) s.innerHTML = '0' + is ;
 	else s.innerHTML = is ;
-	*/
 }
 
 function countdownap ()
@@ -328,9 +326,6 @@ function countdownalevel ()
 
 function countdownsat ()
 {
-	document.querySelector ( ".countdown" ).innerHTML = "<p class = 'cancel' > Cancelled </p>" ;
-
-	/*
 	var sat = [ 314 , 606 , 829 , 1003 , 1107 , 1205 ] ;
 
 	var t = new Date () ;
@@ -430,5 +425,4 @@ function countdownsat ()
 	
 	if ( is < 10 ) s.innerHTML = '0' + is ;
 	else s.innerHTML = is ;
-	*/
 }

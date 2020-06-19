@@ -5,11 +5,11 @@ var sat = [] ;
 sat [ 0 ] = { ddl: 214 , time: 314 , post: 404 , sat2: 0 , center: "All" , can: 0 } ;
 sat [ 1 ] = { ddl: 403 , time: 502 , post: 515 , sat2: 1 , center: "All" , can: 1 } ;
 sat [ 2 ] = { ddl: 508 , time: 606 , post: 615 , sat2: 1 , center: "North America and Europe" , can: 1 } ;
-sat [ 3 ] = { ddl: 807 , time: 829 , post: 917 , sat2: 1 , center: "All"  , can: -1 } ;
-sat [ 4 ] = { ddl: 920 , time: 1003 , post: 1022 , sat2: 1 , center: "All"  , can: -1 } ;
-sat [ 4 ] = { ddl: 920 , time: 1003 , post: 1022 , sat2: 1 , center: "All"  , can: -1 } ;
-sat [ 5 ] = { ddl: 1009 , time: 1107 , post: 1126 , sat2: 1 , center: "North America and Europe"  , can: -1 } ;
-sat [ 6 ] = { ddl: 1106 , time: 1205 , post: 1217 , sat2: 1 , center: "All"  , can: -1 } ;
+sat [ 3 ] = { ddl: 807 , time: 829 , post: 917 , sat2: 1 , center: "All"  , can: 0 } ;
+sat [ 4 ] = { ddl: 826 , time: 926 , post: 1015 , sat2: 1 , center: "North America and Europe"  , can: 0 } ;
+sat [ 5 ] = { ddl: 920 , time: 1003 , post: 1022 , sat2: 1 , center: "All"  , can: 0 } ;
+sat [ 6 ] = { ddl: 1009 , time: 1107 , post: 1126 , sat2: 1 , center: "North America and Europe"  , can: 0 } ;
+sat [ 7 ] = { ddl: 1106 , time: 1205 , post: 1217 , sat2: 1 , center: "All"  , can: 0 } ;
 
 function comp ( date ) 
 {
