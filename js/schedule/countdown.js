@@ -47,7 +47,7 @@ function countdownact ()
 	
 	var act = [ 208 , 404 , 613 , 718 , 912 , 1024 , 1212 ] ;
 	
-	if ( t.getFullYear () % 4 == 0 && t.getFullYear () % 100 != 0 || t.getFullYear () % 400 == 0) 
+	if ( t.getFullYear () % 4 == 0 && t.getFullYear () % 100 != 0 || t.getFullYear () % 400 == 0 ) 
 	{
 		md [ 1 ] = 29 ;
 	}
@@ -326,6 +326,9 @@ function countdownalevel ()
 
 function countdownsat ()
 {
+	document.querySelector ( ".countdown" ).innerHTML = "<p class = 'cancel' > Cancelled </p>" ;
+	
+	/*
 	var sat = [ 314 , 606 , 829 , 1003 , 1107 , 1205 ] ;
 
 	var t = new Date () ;
@@ -425,4 +428,5 @@ function countdownsat ()
 	
 	if ( is < 10 ) s.innerHTML = '0' + is ;
 	else s.innerHTML = is ;
+	*/
 }

@@ -1,5 +1,5 @@
-var sat = [ 314 , 829 , 926 , 1003 , 1107 , 1205 ] ;
-var act = [ 208 , 619 , 912 , 1024 , 1212 ] ;
+var sat = [ 1232 ] ;
+var act = [ 1232 ] ;
 var ap = 512 ;
 var alevel = 1232 ;
 
@@ -63,10 +63,10 @@ function countdown ()
 	{
 		if ( dict [ i ].value == 1232 )
 		{
-			document.write ( `<a href = 'schedule/${ dict [ i ].id.toLowerCase () }.html' style = 'color: #00DFB9' > <p> ${ dict [ i ].id } test <span class = 'grey' > cancelled </span>`)
+			document.write ( `<a href = 'javascript: alert ( "There is currently no schedule!")' style = 'color: #00DFB9' > <p> ${ dict [ i ].id } test <span class = 'grey' > cancelled </span>`)
 			continue ;
 		}
-		else if ( dict [ i ].value == undefined )
+		else if ( dict [ i ].value == undefined || dict [ i ].value / 100 < cdm || ( dict [ i ].value / 100 ) == cdm && dict [ i ].value % 100 < cdd ) 
 			continue ;
 
 		var d = day ( cdm , cdd , parseInt ( dict [ i ].value / 100 ) , dict [ i ].value % 100 ) ;
